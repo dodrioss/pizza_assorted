@@ -199,21 +199,38 @@ class VideoExtractor(BaseExtractor):
         meta["format_name"] = fmt.get("format_name", "unknown")
 
         has_subtitles = False
+
         for stream in data.get("streams", []):
             codec_type = stream.get("codec_type", "")
+
             if codec_type == "video":
-                meta["width"] = stream.get("width")
-                meta["height"] = stream.get("height")
-                meta["video_codec"] = stream.get("codec_name")
-                meta["fps"] = stream.get("r_frame_rate", "")
+                meta["width"] = int(stream.get("width") or 0)
+                meta["height"] = int(stream.get("height") or 0)
+                meta["video_codec"] = stream.get("codec_name") or "unknown"
+
+                # fps нормализация (ffprobe: "30000/1001")
+                fps = stream.get("r_frame_rate", "0/1")
+                try:
+                    num, den = fps.split("/")
+                    meta["fps"] = float(num) / float(den) if float(den) != 0 else 0.0
+                except Exception:
+                    meta["fps"] = 0.0
+
             elif codec_type == "audio":
-                meta["audio_codec"] = stream.get("codec_name")
-                meta["audio_channels"] = stream.get("channels")
-                meta["audio_sample_rate"] = stream.get("sample_rate")
+                meta["audio_codec"] = stream.get("codec_name") or "unknown"
+                meta["audio_channels"] = stream.get("channels") or 0
+                meta["audio_sample_rate"] = stream.get("sample_rate") or 0
+
             elif codec_type == "subtitle":
                 has_subtitles = True
 
         meta["has_embedded_subtitles"] = has_subtitles
+
+        meta.setdefault("width", 0)
+        meta.setdefault("height", 0)
+        meta.setdefault("video_codec", "unknown")
+        meta.setdefault("fps", 0.0)
+
         return meta
 
     def _read_external_subtitles(self) -> str:

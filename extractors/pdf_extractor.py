@@ -82,6 +82,16 @@ class PDFExtractor(BaseExtractor):
             ExtractionError: Если PDF не удалось открыть.
         """
         start = self._log_start()
+        if self.file_size_bytes == 0:
+            result = self._make_result(
+                text="",
+                chunks=[],
+                metadata={"empty": True},
+                error="empty file",
+                start_time=start,
+            )
+            self._log_done(result)
+            return result
 
         if self._prefer_pdfplumber:
             result = self._extract_with_pdfplumber(start)

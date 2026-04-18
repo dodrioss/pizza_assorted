@@ -441,7 +441,7 @@ class PatternMeta(NamedTuple):
     is_biometric: bool = False
 
 
-# Реестр: имя → PatternMeta
+# Реестр: имя - PatternMeta
 # Используется в pii_detector.py для итерации по всем паттернам
 PII_PATTERNS: dict[str, PatternMeta] = {
     # --- ФИО ---
@@ -488,11 +488,16 @@ PII_PATTERNS: dict[str, PatternMeta] = {
         category="address",
         description="Почтовый индекс РФ",
     ),
-    # --- Документы ---
     "passport_rf": PatternMeta(
+        pattern=_PASSPORT_RF,           
+        category="government_id",
+        description="Паспорт РФ (серия и номер)",
+        requires_validation=True,
+    ),
+    "passport_rf_context": PatternMeta(        
         pattern=_PASSPORT_RF_CONTEXT,
         category="government_id",
-        description="Паспорт РФ (серия и номер, контекстный)",
+        description="Паспорт РФ (с контекстом)",
         requires_validation=True,
     ),
     "snils": PatternMeta(
@@ -502,6 +507,12 @@ PII_PATTERNS: dict[str, PatternMeta] = {
         requires_validation=True,
     ),
     "inn": PatternMeta(
+        pattern=_INN,                   
+        category="government_id",
+        description="ИНН",
+        requires_validation=True,
+    ),
+    "inn_context": PatternMeta(
         pattern=_INN_CONTEXT,
         category="government_id",
         description="ИНН (контекстный)",
