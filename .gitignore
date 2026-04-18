@@ -1,6 +1,6 @@
 venv/
 # Python bytecode & cache
-**/pycache/
+**/__pycache__/
 *.pyc
 *.pyo
 
