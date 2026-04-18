@@ -1,11 +1,9 @@
-# report/generators.py
 """
-5-й этап: Формирование отчета (CSV / JSON / Markdown)
+5-й этап: Формирование отчета (CSV / JSON / Markdown + result.csv для хакатона)
 """
 
 import csv
 import json
-import os
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Any
@@ -32,10 +30,10 @@ class ReportGenerator:
             report_name = f"pdn_report_{datetime.now():%Y%m%d_%H%M%S}"
 
         ReportGenerator._ensure_dir(output_dir)
-        base_path = os.path.join(output_dir, report_name)
-
+        base_path = Path(output_dir) / report_name
         saved = {}
 
+        # Обычные отчёты (оставляем как было)
         if "csv" in formats:
             saved["csv"] = ReportGenerator._to_csv(results, f"{base_path}.csv")
         if "json" in formats:
@@ -43,15 +41,63 @@ class ReportGenerator:
         if "md" in formats:
             saved["md"] = ReportGenerator._to_markdown(results, f"{base_path}.md")
 
+        # === СПЕЦИАЛЬНЫЙ ФАЙЛ ДЛЯ ХАКАТОНА ===
+        result_csv_path = ReportGenerator._to_hackathon_result_csv(results, output_dir)
+        if result_csv_path:
+            saved["result_csv"] = str(result_csv_path)
+
         print(f"Отчет сгенерирован: {len(results)} файлов обработано")
+        print(f"result.csv для сдачи создан: {result_csv_path}")
+        
         return saved
+
+    @staticmethod
+    def _to_hackathon_result_csv(results: List[Dict], output_dir: str) -> Path | None:
+        """Создаёт result.csv строго по требованиям хакатона:
+        size,time,name
+        Только файлы с найденными ПДн
+        """
+        hackathon_rows = []
+
+        for r in results:
+            if r.get("total_findings", 0) == 0:
+                continue  # только файлы с ПДн
+
+            file_path = Path(r["path"])
+            if not file_path.exists():
+                continue
+
+            size = file_path.stat().st_size
+
+            # Формат времени точно как в примере: "sep 26 18:31" (маленькими буквами)
+            mtime = file_path.stat().st_mtime
+            time_str = datetime.fromtimestamp(mtime).strftime("%b %d %H:%M").lower()
+
+            hackathon_rows.append({
+                "size": size,
+                "time": time_str,
+                "name": file_path.name
+            })
+
+        if not hackathon_rows:
+            print("⚠️  result.csv не создан — не найдено файлов с персональными данными")
+            return None
+
+        result_file = Path(output_dir) / "result.csv"
+
+        with open(result_file, "w", encoding="utf-8", newline="") as f:
+            writer = csv.DictWriter(f, fieldnames=["size", "time", "name"])
+            writer.writeheader()
+            writer.writerows(hackathon_rows)
+
+        print(f"✅ result.csv успешно создан ({len(hackathon_rows)} файлов с ПДн)")
+        return result_file
 
     @staticmethod
     def _to_csv(results: List[Dict], filepath: str) -> str:
         """Исправленная версия CSV: delimiter=';' + правильное экранирование полей"""
         with open(filepath, "w", encoding="utf-8", newline="") as f:
             writer = csv.writer(f, delimiter=";", quoting=csv.QUOTE_MINIMAL)
-
             # Заголовок
             writer.writerow([
                 "путь",
@@ -60,13 +106,10 @@ class ReportGenerator:
                 "УЗ",
                 "формат_файла"
             ])
-
             for r in results:
-                # Категории через запятую (внутри поля — Excel/RU корректно обработает)
                 cats_str = ", ".join(
                     f"{cat}({cnt})" for cat, cnt in r["pii_categories"].items() if cnt > 0
                 ) or "—"
-
                 writer.writerow([
                     r["path"],
                     cats_str,
@@ -85,7 +128,6 @@ class ReportGenerator:
             "uz_distribution": {},
             "results": results
         }
-
         for r in results:
             uz = r["uz_level"]
             data["uz_distribution"][uz] = data["uz_distribution"].get(uz, 0) + 1
@@ -104,7 +146,6 @@ class ReportGenerator:
             "| УЗ | Количество файлов |",
             "|----|-------------------|",
         ]
-
         uz_count = {}
         for r in results:
             uz_count[r["uz_level"]] = uz_count.get(r["uz_level"], 0) + 1
