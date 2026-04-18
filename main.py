@@ -1,6 +1,5 @@
 """
-Точка входа (CLI) для решения хакатона
-Полный пайплайн: сканирование → извлечение → обнаружение ПДн → классификация УЗ → отчёт
+Точка входа (CLI) — параллельная обработка файлов + цветной вывод
 """
 
 import argparse
@@ -10,10 +9,10 @@ import traceback
 from collections import Counter
 from pathlib import Path
 
-# Импортируем утилиты
-from utils.logging_utils import setup_logging, get_progress_bar
+from utils.logging_utils import setup_logging
 from utils.text_utils import clean_text, quick_skip_text
 from utils.performance import log_memory_usage
+from utils.parallel import process_files_parallel, get_worker_info, optimal_workers
 
 from scanner import FileScanner
 from extractors import get_extractor
@@ -21,172 +20,234 @@ from detectors import PIIDetector
 from classifiers import UZClassifier
 from report import ReportGenerator
 
+import logging
+from rich.console import Console
+from rich.progress import Progress, TextColumn, BarColumn, TaskProgressColumn, TimeRemainingColumn
+
+console = Console()
+logger = logging.getLogger(__name__)
+
+_detector: PIIDetector | None = None
+_classifier: UZClassifier | None = None
+
 
 def parse_args():
     parser = argparse.ArgumentParser(
         description="Автоматическое обнаружение персональных данных (152-ФЗ)",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
+    parser.add_argument("--dir", default=".", help="Путь к папке для сканирования")
+    parser.add_argument("--formats", nargs="+", choices=["csv", "json", "md"], default=["csv"])
+    parser.add_argument("--output-dir", default="output/reports")
+    parser.add_argument("--log", default="pdn_scanner.log")
+
+    parser.add_argument("--max-ocr-attempts", type=int, default=5)
+    parser.add_argument("--paddle-fallback", action="store_true")
+    parser.add_argument("--aggressive-ocr", action="store_true")
+    parser.add_argument("--no-skip", action="store_true")
+
     parser.add_argument(
-        "--dir",
-        default=".",
-        help="Путь к папке для сканирования",
+        "--workers", type=int, default=None,
+        help="Число потоков (по умолчанию: авто, cpu*4 для I/O). "
+             "Можно задать через PDN_WORKERS."
     )
-    parser.add_argument(
-        "--formats",
-        nargs="+",
-        choices=["csv", "json", "md"],
-        default=["csv", "json", "md"],
-        help="Форматы отчётов",
-    )
-    parser.add_argument(
-        "--output-dir",
-        default="output/reports",
-        help="Папка для сохранения отчётов",
-    )
-    parser.add_argument(
-        "--log",
-        default="pdn_scanner.log",
-        help="Путь к лог-файлу",
-    )
+
     return parser.parse_args()
 
 
-def main():
-    start_time = time.perf_counter()
+def build_process_fn(args):
+    """
+    Замыкание: возвращает потокобезопасную функцию обработки одного файла.
+    Все объекты внутри — read-only (детектор, классификатор, args).
+    """
+    detector = _detector
+    classifier = _classifier
 
-    # Настройка логирования
-    args = parse_args()
-    setup_logging(log_file=args.log, level=20)  # INFO level
-
-    import logging
-    logger = logging.getLogger(__name__)
-
-    target_dir = Path(args.dir).resolve()
-    print("=== ЗАПУСК СКАНИРОВАНИЯ ФАЙЛОВОГО ХРАНИЛИЩА ===")
-    print(f"Целевая директория: {target_dir}")
-
-    try:
-        scanner = FileScanner(root_dir=str(target_dir))
-        file_paths = scanner.scan()
-    except Exception as e:
-        logger.exception("Критическая ошибка при сканировании директории")
-        print(f"Ошибка сканирования: {e}")
-        sys.exit(1)
-
-    print(f"Найдено файлов для анализа: {len(file_paths)}")
-
-    detector = PIIDetector()
-    classifier = UZClassifier()
-    results = []
-    errors_count = 0
-
-    print("=== ОБРАБОТКА ФАЙЛОВ ===")
-    progress = get_progress_bar(file_paths, desc="Обработка", unit="файл")
-
-    for path_str in progress:
+    def process_file(path_str: str) -> dict | None:
         path = Path(path_str)
-
         try:
-            extractor = get_extractor(str(path))
+            extractor = get_extractor(
+                str(path),
+                extra_kwargs={
+                    "max_ocr_attempts": args.max_ocr_attempts,
+                    "paddle_fallback": args.paddle_fallback,
+                }
+            )
             if extractor is None:
-                continue
+                return None
 
             extraction = extractor.extract()
-            raw_text = getattr(extraction, "text", str(extraction))
+            text = clean_text(getattr(extraction, "text", ""))
 
-            # Очистка и быстрая проверка текста
-            text = clean_text(raw_text)
-            if quick_skip_text(text, min_chars=30):
-                continue
+            if not args.no_skip and quick_skip_text(text, min_chars=30):
+                return None
 
-            # Обнаружение ПДн
             detection = detector.detect_all_pii(text, str(path))
 
-            # Получение категорий и количества
             if hasattr(detection, "findings") and detection.findings:
                 findings_counter = Counter(
-                    f.pattern_name for f in detection.findings
-                    if hasattr(f, "pattern_name")
+                    f.pattern_name for f in detection.findings if hasattr(f, "pattern_name")
                 )
                 pii_categories = dict(findings_counter)
                 pii_count = len(detection.findings)
-            elif hasattr(detection, "categories_found") and detection.categories_found:
-                cats = detection.categories_found
-                if isinstance(cats, (set, list)):
-                    pii_categories = {cat: 1 for cat in cats}
-                elif isinstance(cats, dict):
-                    pii_categories = cats
-                else:
-                    pii_categories = {}
-                pii_count = sum(pii_categories.values()) if pii_categories else 0
             else:
                 pii_categories = {}
                 pii_count = 0
 
-            # Классификация УЗ
-            uz_level = (
-                classifier.classify(pii_categories)
-                if pii_count > 0
-                else "УЗ-4"
-            )
+            uz_level = classifier.classify(pii_categories) if pii_count > 0 else "УЗ-4"
 
-            results.append({
+            return {
                 "path": str(path),
                 "file_format": path.suffix[1:].lower(),
                 "pii_categories": pii_categories,
                 "total_findings": pii_count,
                 "uz_level": uz_level,
-            })
+            }
 
         except Exception as e:
-            errors_count += 1
-            err_str = str(e)
+            err_str = str(e).lower()
+            err_full = str(e)
 
-            # Пропускаем известные безобидные ошибки экстракторов
-            if any(skip in err_str for skip in [
-                "Текстовый слой не найден", "Package not found",
-                "Failed to open", "No text layer", "OCR failed"
+            if any(kw in err_str for kw in [
+                "не удалось открыть изображение",
+                "unidentifiedimageerror",
+                "cannot identify image file"
             ]):
-                logger.warning(f"Пропущен файл {path.name}: {err_str}")
-                continue
+                console.print(f"[yellow]Повреждённое изображение[/yellow] → {path.name}")
+                return {
+                    "path": str(path),
+                    "file_format": path.suffix[1:].lower(),
+                    "pii_categories": {},
+                    "total_findings": 0,
+                    "uz_level": "УЗ-4",
+                    "ocr_failed": True,
+                    "error": "Повреждённое изображение"
+                }
 
-            # Логируем неожиданные ошибки с полной трассировкой
-            logger.error(f"Ошибка обработки файла: {path}")
-            logger.error(traceback.format_exc())
+            elif any(kw in err_str for kw in [
+                "ocr не смог", "ocr failed", "tesseract вернул пустой",
+                "easyocr", "paddleocr"
+            ]):
+                console.print(f"[bold red]OCR fail →[/bold red] {path.name}")
+                return {
+                    "path": str(path),
+                    "file_format": path.suffix[1:].lower(),
+                    "pii_categories": {},
+                    "total_findings": 0,
+                    "uz_level": "УЗ-4",
+                    "ocr_failed": True,
+                    "error": "OCR не смог извлечь текст"
+                }
 
-            print(f"Ошибка обработки {path.name}: {err_str}", file=sys.stderr)
-            continue
+            else:
+                console.print(f"[bold red]Критическая ошибка[/bold red] → {path.name}")
+                logger.error(f"Ошибка обработки файла {path}", exc_info=True)
+                return {
+                    "path": str(path),
+                    "file_format": path.suffix[1:].lower(),
+                    "pii_categories": {},
+                    "total_findings": 0,
+                    "uz_level": "УЗ-4",
+                    "error": f"Критическая ошибка: {err_full[:200]}"
+                }
 
-    # Логирование памяти
+    return process_file
+
+
+def main():
+    global _detector, _classifier
+
+    start_time = time.perf_counter()
+    args = parse_args()
+
+    setup_logging(log_file=args.log, level=20)
+
+    target_dir = Path(args.dir).resolve()
+
+    console.print("\n[bold cyan]=== ЗАПУСК СКАНИРОВАНИЯ ===[/bold cyan]")
+    console.print(f"Директория: [blue]{target_dir}[/blue]")
+
+    if args.aggressive_ocr:
+        args.paddle_fallback = True
+        if args.max_ocr_attempts < 6:
+            args.max_ocr_attempts = 6
+        console.print("⚡ [bold yellow]Агрессивный режим OCR включён[/bold yellow]")
+
+    n_workers = args.workers if args.workers is not None else optimal_workers("io")
+    worker_info = get_worker_info()
+    console.print(
+        f"Потоки: [bold green]{n_workers}[/bold green] "
+        f"[dim](CPU: {worker_info['cpu_count']}, "
+        f"авто I/O: {worker_info['io_workers']})[/dim]"
+    )
+    if worker_info["env_override"]:
+        console.print(f"[dim]  ↳ задано через PDN_WORKERS={worker_info['env_override']}[/dim]")
+
+    try:
+        file_paths = FileScanner(root_dir=str(target_dir)).scan()
+    except Exception as e:
+        console.print(f"[bold red]Ошибка сканирования: {e}[/bold red]")
+        sys.exit(1)
+
+    console.print(f"Найдено файлов: [bold]{len(file_paths)}[/bold]")
+
+    _detector = PIIDetector()
+    _classifier = UZClassifier()
+
+    process_fn = build_process_fn(args)
+
+    console.print("\n[bold cyan]=== ОБРАБОТКА ФАЙЛОВ ===[/bold cyan]")
+
+    with Progress(
+        TextColumn("{task.description}"),
+        BarColumn(),
+        TaskProgressColumn(),
+        TimeRemainingColumn(),
+        console=console
+    ) as progress:
+        task = progress.add_task(
+            f"[green]Обработка файлов ({n_workers} потоков)...",
+            total=len(file_paths)
+        )
+
+        results, errors_count = process_files_parallel(
+            file_paths,
+            process_fn,
+            workers=n_workers,
+            progress=progress,
+            task_id=task,
+            console=console,
+        )
+
+    ocr_failed_count = sum(1 for r in results if r.get("ocr_failed"))
+
     log_memory_usage(message="Перед генерацией отчётов")
 
-    # Генерация отчётов
-    print(f"\n=== ГЕНЕРАЦИЯ ОТЧЁТОВ ({len(results)} записей, ошибок: {errors_count}) ===")
-
+    saved = {}
     try:
         saved = ReportGenerator.generate(
             results=results,
             output_dir=args.output_dir,
-            formats=args.formats,
+            formats=args.formats
         )
     except Exception as e:
-        logger.exception("Критическая ошибка при генерации отчётов")
-        print(f"Ошибка генерации отчётов: {e}")
-        saved = {}
+        console.print(f"[bold red]Ошибка генерации отчётов: {e}[/bold red]")
+
+    log_memory_usage(message="Финальное потребление памяти")
 
     elapsed = time.perf_counter() - start_time
 
-    print("\n=== ГОТОВО ===")
-    print(f"Успешно обработано: {len(results)} файлов")
-    print(f"Пропущено ошибок: {errors_count}")
-    print(f"Время выполнения: {elapsed:.1f} сек ({elapsed/60:.1f} мин)")
-    print(f"Отчёты сохранены в: {Path(args.output_dir).resolve()}")
+    console.print("\n[bold cyan]=== ГОТОВО ===[/bold cyan]")
+    console.print(f"Обработано файлов: [bold green]{len(results)}[/bold green]")
+    if errors_count:
+        console.print(f"Ошибок (thread-level): [bold red]{errors_count}[/bold red]")
+    if ocr_failed_count:
+        console.print(f"OCR полностью провалился: [bold red]{ocr_failed_count}[/bold red]")
+    console.print(f"Время выполнения: [bold]{elapsed:.1f} сек[/bold]")
+    console.print(f"Использовано потоков: [bold]{n_workers}[/bold]")
 
     for fmt, path in saved.items():
-        print(f"   • {fmt.upper():4} → {Path(path).name}")
-
-    log_memory_usage(message="Финальное потребление памяти")
+        console.print(f" • {fmt.upper():4} → {Path(path).name}")
 
 
 if __name__ == "__main__":

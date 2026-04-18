@@ -1,22 +1,5 @@
 """
 extractors — Модуль извлечения текста из файлов различных форматов.
-
-Поддерживаемые форматы:
-    - PDF (.pdf)           — PyMuPDF + pdfplumber с чанкингом для больших файлов
-    - Word (.docx, .doc)   — python-docx
-    - Таблицы (.csv, .parquet) — pandas / pyarrow с чанкированным чтением
-    - Изображения (.jpg, .png, .tif, .gif) — Tesseract OCR + EasyOCR (опционально)
-    - Веб-страницы (.html) — BeautifulSoup
-    - Видео (.mp4)         — метаданные + субтитры (если доступны)
-
-Пример использования::
-
-    from extractors import get_extractor
-
-    extractor = get_extractor("/path/to/file.pdf")
-    result = extractor.extract()
-    print(result.text)
-    print(result.metadata)
 """
 
 from extractors.base import BaseExtractor, ExtractionResult, ExtractionError
@@ -28,10 +11,9 @@ from extractors.html_extractor import HTMLExtractor
 from extractors.video_extractor import VideoExtractor
 
 import os
-from typing import Optional
+from typing import Optional, Dict, Any
 
 
-# Реестр экстракторов: расширение -> класс
 _EXTRACTOR_REGISTRY: dict[str, type[BaseExtractor]] = {
     ".pdf": PDFExtractor,
     ".docx": DocxExtractor,
@@ -50,41 +32,22 @@ _EXTRACTOR_REGISTRY: dict[str, type[BaseExtractor]] = {
 }
 
 
-def get_extractor(file_path: str) -> Optional[BaseExtractor]:
-    """Возвращает подходящий экстрактор для переданного файла.
-
-    Выбор экстрактора осуществляется по расширению файла.
-    Если расширение не поддерживается — возвращается ``None``.
-
-    Args:
-        file_path: Абсолютный или относительный путь к файлу.
-
-    Returns:
-        Экземпляр подходящего экстрактора или ``None``,
-        если формат файла не поддерживается.
-
-    Example::
-
-        extractor = get_extractor("report.pdf")
-        if extractor:
-            result = extractor.extract()
-    """
+def get_extractor(file_path: str, extra_kwargs: Dict[str, Any] = None) -> Optional[BaseExtractor]:
+    """Возвращает подходящий экстрактор для файла с поддержкой дополнительных параметров (для ImageExtractor)."""
     ext = os.path.splitext(file_path)[-1].lower()
     extractor_class = _EXTRACTOR_REGISTRY.get(ext)
+
     if extractor_class is None:
         return None
+
+    if extra_kwargs and extractor_class is ImageExtractor:
+        return extractor_class(file_path, **extra_kwargs)
+
     return extractor_class(file_path)
 
 
 def is_supported(file_path: str) -> bool:
-    """Проверяет, поддерживается ли формат файла для извлечения текста.
-
-    Args:
-        file_path: Путь к файлу.
-
-    Returns:
-        ``True`` если формат поддерживается, иначе ``False``.
-    """
+    """Проверяет, поддерживается ли формат файла для извлечения текста."""
     ext = os.path.splitext(file_path)[-1].lower()
     return ext in _EXTRACTOR_REGISTRY
 

@@ -1,0 +1,8 @@
+# Они не ставятся через pip!
+python -m pip install paddlepaddle -i https://www.paddlepaddle.org.cn/packages/stable/cpu/
+
+# 4. Установи paddleocr (если ещё не установился)
+python -m pip install paddleocr
+
+Внести в структуру проекта: utils/parallel.py
+

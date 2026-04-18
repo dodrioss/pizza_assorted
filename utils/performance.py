@@ -4,7 +4,7 @@
 
 import time
 from functools import wraps
-import psutil   # pip install psutil (добавь в requirements.txt)
+import psutil
 
 
 def timer(func):

@@ -2,6 +2,7 @@ from .text_utils import clean_text, quick_skip_text
 from .file_utils import is_supported_by_extension, get_file_mime, safe_read_text
 from .logging_utils import setup_logging, get_progress_bar
 from .performance import timer, memory_usage
+from .parallel import process_files_parallel, get_worker_info, optimal_workers
 
 __all__ = [
     "clean_text",
@@ -13,4 +14,7 @@ __all__ = [
     "get_progress_bar",
     "timer",
     "memory_usage",
+    "process_files_parallel",
+    "get_worker_info",
+    "optimal_workers",
 ]

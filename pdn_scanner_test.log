@@ -1,0 +1,1016 @@
+2026-04-18 22:33:55,613 | INFO     | scanner.file_scanner | Инициализация FileScanner: root_dir=/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты
+2026-04-18 22:33:55,613 | INFO     | scanner.file_scanner | Поддерживаемые расширения: 19 типов
+2026-04-18 22:33:55,613 | INFO     | scanner.file_scanner | Начало сканирования директории: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты
+2026-04-18 22:33:55,621 | INFO     | scanner.file_scanner | Сканирование завершено. Найдено поддерживаемых файлов: 1329
+2026-04-18 22:34:02,759 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 298141_original.jpg
+2026-04-18 22:34:09,930 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/298141_original.jpg': Unknown argument: show_log
+2026-04-18 22:34:12,124 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/298141_original.jpg': Unknown argument: show_log
+2026-04-18 22:34:14,291 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/298141_original.jpg': Unknown argument: show_log
+2026-04-18 22:34:14,495 | INFO     | extractors.image_extractor | Успех на попытке 4 (Tesseract)
+2026-04-18 22:34:14,941 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 1067302_800.jpg
+2026-04-18 22:34:15,605 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:34:17,689 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 17135_900.jpg
+2026-04-18 22:34:18,210 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:34:23,826 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 95613525-14438121-image-a-107_1740587037264.jpg
+2026-04-18 22:34:24,098 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:34:40,431 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 69148_original.png
+2026-04-18 22:34:41,499 | INFO     | extractors.image_extractor | Успех на попытке 1 (EasyOCR)
+2026-04-18 22:34:43,770 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 95612091-14438121-image-a-86_1740585245717.jpg
+2026-04-18 22:34:44,124 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:34:44,914 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 2920_original.jpg
+2026-04-18 22:34:46,712 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/2920_original.jpg': Unknown argument: show_log
+2026-04-18 22:34:48,661 | INFO     | extractors.image_extractor | Успех на попытке 2 (EasyOCR)
+2026-04-18 22:34:54,645 | INFO     | scanner.file_scanner | Инициализация FileScanner: root_dir=/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты
+2026-04-18 22:34:54,645 | INFO     | scanner.file_scanner | Поддерживаемые расширения: 19 типов
+2026-04-18 22:34:54,646 | INFO     | scanner.file_scanner | Начало сканирования директории: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты
+2026-04-18 22:34:54,657 | INFO     | scanner.file_scanner | Сканирование завершено. Найдено поддерживаемых файлов: 1329
+2026-04-18 22:35:01,681 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 298141_original.jpg
+2026-04-18 22:35:09,314 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/298141_original.jpg': Unknown argument: show_log
+2026-04-18 22:35:11,518 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/298141_original.jpg': Unknown argument: show_log
+2026-04-18 22:35:13,768 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/298141_original.jpg': Unknown argument: show_log
+2026-04-18 22:35:13,964 | INFO     | extractors.image_extractor | Успех на попытке 4 (Tesseract)
+2026-04-18 22:35:14,414 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 1067302_800.jpg
+2026-04-18 22:35:15,071 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:35:17,210 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 17135_900.jpg
+2026-04-18 22:35:17,767 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:35:23,469 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 95613525-14438121-image-a-107_1740587037264.jpg
+2026-04-18 22:35:23,724 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:35:40,296 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 69148_original.png
+2026-04-18 22:35:41,353 | INFO     | extractors.image_extractor | Успех на попытке 1 (EasyOCR)
+2026-04-18 22:35:43,658 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 95612091-14438121-image-a-86_1740585245717.jpg
+2026-04-18 22:35:44,017 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:35:44,805 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 2920_original.jpg
+2026-04-18 22:35:46,596 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/2920_original.jpg': Unknown argument: show_log
+2026-04-18 22:35:48,412 | INFO     | extractors.image_extractor | Успех на попытке 2 (EasyOCR)
+2026-04-18 22:35:51,085 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 322568_1000.png
+2026-04-18 22:35:51,298 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:35:53,828 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 8037_900.jpg
+2026-04-18 22:35:54,221 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:35:54,316 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 1926959_300.jpg
+2026-04-18 22:35:55,562 | INFO     | extractors.image_extractor | Успех на попытке 1 (EasyOCR)
+2026-04-18 22:36:05,642 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 4154879_600.jpg
+2026-04-18 22:36:05,816 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:36:16,923 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 4aed48cb2f8ed96a8609218247d6c54b.jpg
+2026-04-18 22:36:17,088 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:36:24,858 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 4344978_original.jpg
+2026-04-18 22:36:25,041 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:36:48,540 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 4416_900.jpg
+2026-04-18 22:36:50,070 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/4416_900.jpg': Unknown argument: show_log
+2026-04-18 22:36:51,522 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/4416_900.jpg': Unknown argument: show_log
+2026-04-18 22:36:51,616 | INFO     | extractors.image_extractor | Успех на попытке 3 (Tesseract)
+2026-04-18 22:37:00,937 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 75e04730e60ee7c22e590e647ab7b1f2.jpg
+2026-04-18 22:37:01,028 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:37:01,408 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 12156_800.jpg
+2026-04-18 22:37:01,518 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:37:11,689 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 6818_900.jpg
+2026-04-18 22:37:11,945 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:37:12,036 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 1926844_300.jpg
+2026-04-18 22:37:12,151 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:37:21,163 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для IMG_3137.jpg
+2026-04-18 22:37:21,547 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:37:25,843 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 237988_800.png
+2026-04-18 22:37:26,025 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:37:28,852 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 344806_original.jpg
+2026-04-18 22:37:29,064 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:37:29,893 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 1778652_original.jpg
+2026-04-18 22:37:30,014 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:37:41,007 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для fc408a595487f2c954e0fdb8ca8f0b2f.jpg
+2026-04-18 22:37:41,206 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:37:42,972 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 121681_600.png
+2026-04-18 22:37:44,359 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:37:47,118 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для i_026.png
+2026-04-18 22:37:49,089 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png': Unknown argument: show_log
+2026-04-18 22:37:51,031 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png': Unknown argument: show_log
+2026-04-18 22:37:53,112 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png': Unknown argument: show_log
+2026-04-18 22:37:57,888 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png': Unknown argument: show_log
+2026-04-18 22:37:59,861 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png': Unknown argument: show_log
+2026-04-18 22:38:01,857 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png': Unknown argument: show_log
+2026-04-18 22:38:01,857 | WARNING  | extractors.image_extractor.ImageExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png' — OCR не смог извлечь текст
+2026-04-18 22:38:10,395 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 172704_800.jpg
+2026-04-18 22:38:10,988 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:38:30,812 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 121681_original.png
+2026-04-18 22:38:33,972 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:38:36,767 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 54bf4e7c258f1b85df7b02cfbe538bd6.jpg
+2026-04-18 22:38:36,860 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:38:43,863 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 39676_800.jpg
+2026-04-18 22:38:44,004 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:38:50,455 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 145115_540.jpg
+2026-04-18 22:38:50,585 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:39:05,541 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 68624_original.png
+2026-04-18 22:39:06,647 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/68624_original.png': Unknown argument: show_log
+2026-04-18 22:39:07,775 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/68624_original.png': Unknown argument: show_log
+2026-04-18 22:39:08,926 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/68624_original.png': Unknown argument: show_log
+2026-04-18 22:39:09,045 | INFO     | extractors.image_extractor | Успех на попытке 4 (Tesseract)
+2026-04-18 22:39:25,635 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 1783527_800.jpg
+2026-04-18 22:39:25,885 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:39:27,166 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для ffa452cf21a343f89ba531958b5bdf38.jpg
+2026-04-18 22:39:27,379 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:39:28,119 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 422345601_6251787.jpg
+2026-04-18 22:39:28,660 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:39:36,838 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 121793_original.gif
+2026-04-18 22:39:36,930 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:39:57,698 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 3823033_600.jpg
+2026-04-18 22:39:57,969 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:39:59,167 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 12492179_original.png
+2026-04-18 22:39:59,259 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:40:01,373 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 620529_600.png
+2026-04-18 22:40:01,659 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:40:08,304 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 530a0c14bfac93e04bbbd09ad1fca64c.jpg
+2026-04-18 22:40:09,586 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/530a0c14bfac93e04bbbd09ad1fca64c.jpg': Unknown argument: show_log
+2026-04-18 22:40:10,926 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/530a0c14bfac93e04bbbd09ad1fca64c.jpg': Unknown argument: show_log
+2026-04-18 22:40:11,028 | INFO     | extractors.image_extractor | Успех на попытке 3 (Tesseract)
+2026-04-18 22:40:16,242 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 121909_600.png
+2026-04-18 22:40:16,359 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:40:17,096 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 299483_original.jpg
+2026-04-18 22:40:17,554 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:40:31,401 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 353024_original.jpg
+2026-04-18 22:40:31,773 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:41:11,795 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для c5b78fd2cac4cf400f2d4919e9906427.jpg
+2026-04-18 22:41:11,976 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:41:19,014 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 4979320_original.jpg
+2026-04-18 22:41:22,075 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:41:24,565 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 5967_900.jpg
+2026-04-18 22:41:25,521 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:41:26,598 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 11953_800.jpg
+2026-04-18 22:41:28,457 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/11953_800.jpg': Unknown argument: show_log
+2026-04-18 22:41:28,573 | INFO     | extractors.image_extractor | Успех на попытке 2 (Tesseract)
+2026-04-18 22:41:29,375 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для f1add6390f50cb50ada7118c0848ddec.jpg
+2026-04-18 22:41:29,484 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:41:30,838 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 95606379-14438121-The_Prince_and_Princess_of_Wales_are_visiting_Pontypridd_ahead_o-a-109_1740588279240.jpg
+2026-04-18 22:41:31,011 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:41:32,809 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 2758318_600.png
+2026-04-18 22:41:32,981 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:41:38,696 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 10309_900.jpg
+2026-04-18 22:41:39,120 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:41:45,132 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 95612293-14438121-image-a-97_1740585973713.jpg
+2026-04-18 22:41:45,545 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:42:02,035 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 52043990928_2b726f3fe4_z.jpg
+2026-04-18 22:42:03,849 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/52043990928_2b726f3fe4_z.jpg': Unknown argument: show_log
+2026-04-18 22:42:05,598 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/52043990928_2b726f3fe4_z.jpg': Unknown argument: show_log
+2026-04-18 22:42:05,707 | INFO     | extractors.image_extractor | Успех на попытке 3 (Tesseract)
+2026-04-18 22:42:06,477 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 2750057_600.png
+2026-04-18 22:42:06,743 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:42:06,848 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 67883_original.png
+2026-04-18 22:42:08,005 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/67883_original.png': Unknown argument: show_log
+2026-04-18 22:42:08,094 | INFO     | extractors.image_extractor | Успех на попытке 2 (Tesseract)
+2026-04-18 22:42:23,006 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 118330_800.jpg
+2026-04-18 22:42:24,000 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:42:25,756 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 121909_original.png
+2026-04-18 22:42:25,882 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:42:30,194 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 1778109_1000.jpg
+2026-04-18 22:42:30,503 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:42:54,308 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 895859_600.png
+2026-04-18 22:42:54,574 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:42:56,382 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 14632765_original.jpg
+2026-04-18 22:42:57,731 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:43:04,392 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для Varvara_Turkestanova.jpg
+2026-04-18 22:43:04,608 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:43:05,453 | ERROR    | __main__ | Ошибка обработки файла /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/Russia.pdf
+Traceback (most recent call last):
+  File "/home/dodrios/Desktop/pizza_assorted/venv/lib/python3.14/site-packages/pymupdf/__init__.py", line 3007, in __init__
+    doc = mupdf.fz_open_document(filename)
+  File "/home/dodrios/Desktop/pizza_assorted/venv/lib/python3.14/site-packages/pymupdf/mupdf.py", line 50789, in fz_open_document
+    return _mupdf.fz_open_document(filename)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+pymupdf.mupdf.FzErrorFormat: code=7: no objects found
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dodrios/Desktop/pizza_assorted/extractors/pdf_extractor.py", line 151, in _extract_with_pymupdf
+    doc = fitz.open(self.file_path)
+  File "/home/dodrios/Desktop/pizza_assorted/venv/lib/python3.14/site-packages/pymupdf/__init__.py", line 3010, in __init__
+    raise FileDataError(f'Failed to open file {filename!r}.') from e
+pymupdf.FileDataError: Failed to open file '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/Russia.pdf'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dodrios/Desktop/pizza_assorted/main.py", line 104, in main
+    extraction = extractor.extract()
+  File "/home/dodrios/Desktop/pizza_assorted/extractors/pdf_extractor.py", line 99, in extract
+    result = self._extract_with_pymupdf(start)
+  File "/home/dodrios/Desktop/pizza_assorted/extractors/pdf_extractor.py", line 153, in _extract_with_pymupdf
+    raise ExtractionError(
+        self.file_path, f"Не удалось открыть PDF через PyMuPDF: {exc}"
+    ) from exc
+extractors.base.ExtractionError: Ошибка извлечения из '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/Russia.pdf': Не удалось открыть PDF через PyMuPDF: Failed to open file '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/Russia.pdf'.
+2026-04-18 22:43:05,565 | INFO     | extractors.pdf_extractor.PDFExtractor | PyMuPDF не нашёл текст в '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/presentation.pdf', переключаемся на pdfplumber
+2026-04-18 22:43:12,672 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/presentation.pdf' — Текстовый слой не найден или пустой
+2026-04-18 22:43:12,675 | ERROR    | __main__ | Ошибка обработки файла /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/%D0%9E_%D1%82%D0%B5%D0%BA%D1%83%D1%89%D0%B5%D0%B8%CC%86_%D1%86%D0%B5%D0%BD%D0%BE%D0%B2%D0%BE%D0%B8%CC%86_%D1%81%D0%B8%D1%82%D1%83%D0%B0%D1%86%D0%B8%D0%B8_5_%D0%BC%D0%B0%D1%80%D1%82%D0%B0_2025_%D0%B3%D0%BE%D0%B4%D0%B0.pdf
+Traceback (most recent call last):
+  File "/home/dodrios/Desktop/pizza_assorted/venv/lib/python3.14/site-packages/pymupdf/__init__.py", line 3007, in __init__
+    doc = mupdf.fz_open_document(filename)
+  File "/home/dodrios/Desktop/pizza_assorted/venv/lib/python3.14/site-packages/pymupdf/mupdf.py", line 50789, in fz_open_document
+    return _mupdf.fz_open_document(filename)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+pymupdf.mupdf.FzErrorFormat: code=7: no objects found
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dodrios/Desktop/pizza_assorted/extractors/pdf_extractor.py", line 151, in _extract_with_pymupdf
+    doc = fitz.open(self.file_path)
+  File "/home/dodrios/Desktop/pizza_assorted/venv/lib/python3.14/site-packages/pymupdf/__init__.py", line 3010, in __init__
+    raise FileDataError(f'Failed to open file {filename!r}.') from e
+pymupdf.FileDataError: Failed to open file '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/%D0%9E_%D1%82%D0%B5%D0%BA%D1%83%D1%89%D0%B5%D0%B8%CC%86_%D1%86%D0%B5%D0%BD%D0%BE%D0%B2%D0%BE%D0%B8%CC%86_%D1%81%D0%B8%D1%82%D1%83%D0%B0%D1%86%D0%B8%D0%B8_5_%D0%BC%D0%B0%D1%80%D1%82%D0%B0_2025_%D0%B3%D0%BE%D0%B4%D0%B0.pdf'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dodrios/Desktop/pizza_assorted/main.py", line 104, in main
+    extraction = extractor.extract()
+  File "/home/dodrios/Desktop/pizza_assorted/extractors/pdf_extractor.py", line 99, in extract
+    result = self._extract_with_pymupdf(start)
+  File "/home/dodrios/Desktop/pizza_assorted/extractors/pdf_extractor.py", line 153, in _extract_with_pymupdf
+    raise ExtractionError(
+        self.file_path, f"Не удалось открыть PDF через PyMuPDF: {exc}"
+    ) from exc
+extractors.base.ExtractionError: Ошибка извлечения из '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/%D0%9E_%D1%82%D0%B5%D0%BA%D1%83%D1%89%D0%B5%D0%B8%CC%86_%D1%86%D0%B5%D0%BD%D0%BE%D0%B2%D0%BE%D0%B8%CC%86_%D1%81%D0%B8%D1%82%D1%83%D0%B0%D1%86%D0%B8%D0%B8_5_%D0%BC%D0%B0%D1%80%D1%82%D0%B0_2025_%D0%B3%D0%BE%D0%B4%D0%B0.pdf': Не удалось открыть PDF через PyMuPDF: Failed to open file '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/%D0%9E_%D1%82%D0%B5%D0%BA%D1%83%D1%89%D0%B5%D0%B8%CC%86_%D1%86%D0%B5%D0%BD%D0%BE%D0%B2%D0%BE%D0%B8%CC%86_%D1%81%D0%B8%D1%82%D1%83%D0%B0%D1%86%D0%B8%D0%B8_5_%D0%BC%D0%B0%D1%80%D1%82%D0%B0_2025_%D0%B3%D0%BE%D0%B4%D0%B0.pdf'.
+2026-04-18 22:43:13,920 | INFO     | extractors.pdf_extractor.PDFExtractor | PyMuPDF не нашёл текст в '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/license_telematika_2017-2022.pdf', переключаемся на pdfplumber
+2026-04-18 22:43:13,922 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/license_telematika_2017-2022.pdf' — Текстовый слой не найден или пустой
+2026-04-18 22:43:16,309 | INFO     | extractors.pdf_extractor.PDFExtractor | PyMuPDF не нашёл текст в '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/%D0%92.%D0%90.-%D0%9E%D1%80%D0%BB%D0%BE%D0%B2%D1%83-%D0%BE%D1%82-%D0%90.%D0%98.-%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0.pdf', переключаемся на pdfplumber
+2026-04-18 22:43:16,311 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/%D0%92.%D0%90.-%D0%9E%D1%80%D0%BB%D0%BE%D0%B2%D1%83-%D0%BE%D1%82-%D0%90.%D0%98.-%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0.pdf' — Текстовый слой не найден или пустой
+2026-04-18 22:53:25,249 | INFO     | scanner.file_scanner | Инициализация FileScanner: root_dir=/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты
+2026-04-18 22:53:25,249 | INFO     | scanner.file_scanner | Поддерживаемые расширения: 19 типов
+2026-04-18 22:53:25,249 | INFO     | scanner.file_scanner | Начало сканирования директории: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты
+2026-04-18 22:53:25,261 | INFO     | scanner.file_scanner | Сканирование завершено. Найдено поддерживаемых файлов: 1329
+2026-04-18 22:53:32,458 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 298141_original.jpg
+2026-04-18 22:53:40,011 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/298141_original.jpg': Unknown argument: use_gpu
+2026-04-18 22:53:42,250 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/298141_original.jpg': Unknown argument: use_gpu
+2026-04-18 22:53:44,487 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/298141_original.jpg': Unknown argument: use_gpu
+2026-04-18 22:53:44,695 | INFO     | extractors.image_extractor | Успех на попытке 4 (Tesseract)
+2026-04-18 22:53:45,156 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 1067302_800.jpg
+2026-04-18 22:53:45,822 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:53:47,952 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 17135_900.jpg
+2026-04-18 22:53:48,483 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:53:54,097 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 95613525-14438121-image-a-107_1740587037264.jpg
+2026-04-18 22:53:54,378 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:54:11,012 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 69148_original.png
+2026-04-18 22:54:12,039 | INFO     | extractors.image_extractor | Успех на попытке 1 (EasyOCR)
+2026-04-18 22:54:14,259 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 95612091-14438121-image-a-86_1740585245717.jpg
+2026-04-18 22:54:14,601 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:54:15,364 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 2920_original.jpg
+2026-04-18 22:54:17,186 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/2920_original.jpg': Unknown argument: use_gpu
+2026-04-18 22:54:19,048 | INFO     | extractors.image_extractor | Успех на попытке 2 (EasyOCR)
+2026-04-18 22:54:21,977 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 322568_1000.png
+2026-04-18 22:54:22,201 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:54:24,926 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 8037_900.jpg
+2026-04-18 22:54:25,332 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:54:25,429 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 1926959_300.jpg
+2026-04-18 22:54:26,705 | INFO     | extractors.image_extractor | Успех на попытке 1 (EasyOCR)
+2026-04-18 22:54:37,270 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 4154879_600.jpg
+2026-04-18 22:54:37,471 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:54:49,653 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 4aed48cb2f8ed96a8609218247d6c54b.jpg
+2026-04-18 22:54:49,835 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:54:57,629 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 4344978_original.jpg
+2026-04-18 22:54:57,813 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:55:22,256 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 4416_900.jpg
+2026-04-18 22:55:23,810 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/4416_900.jpg': Unknown argument: use_gpu
+2026-04-18 22:55:25,294 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/4416_900.jpg': Unknown argument: use_gpu
+2026-04-18 22:55:25,399 | INFO     | extractors.image_extractor | Успех на попытке 3 (Tesseract)
+2026-04-18 22:55:33,984 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 75e04730e60ee7c22e590e647ab7b1f2.jpg
+2026-04-18 22:55:34,085 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:55:34,442 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 12156_800.jpg
+2026-04-18 22:55:34,543 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:55:44,250 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 6818_900.jpg
+2026-04-18 22:55:44,516 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:55:44,610 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 1926844_300.jpg
+2026-04-18 22:55:44,730 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:55:53,610 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для IMG_3137.jpg
+2026-04-18 22:55:54,019 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:55:58,181 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 237988_800.png
+2026-04-18 22:55:58,383 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:56:01,200 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 344806_original.jpg
+2026-04-18 22:56:01,434 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:56:02,290 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 1778652_original.jpg
+2026-04-18 22:56:02,409 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:56:12,917 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для fc408a595487f2c954e0fdb8ca8f0b2f.jpg
+2026-04-18 22:56:13,119 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:56:14,745 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 121681_600.png
+2026-04-18 22:56:16,053 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:56:18,599 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для i_026.png
+2026-04-18 22:56:20,520 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png': Unknown argument: use_gpu
+2026-04-18 22:56:22,421 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png': Unknown argument: use_gpu
+2026-04-18 22:56:24,311 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png': Unknown argument: use_gpu
+2026-04-18 22:56:28,705 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png': Unknown argument: use_gpu
+2026-04-18 22:56:30,563 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png': Unknown argument: use_gpu
+2026-04-18 22:56:32,445 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png': Unknown argument: use_gpu
+2026-04-18 22:56:32,445 | WARNING  | extractors.image_extractor.ImageExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png' — OCR не смог извлечь текст
+2026-04-18 22:56:40,525 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 172704_800.jpg
+2026-04-18 22:56:41,126 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:57:00,161 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 121681_original.png
+2026-04-18 22:57:03,021 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:57:05,592 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 54bf4e7c258f1b85df7b02cfbe538bd6.jpg
+2026-04-18 22:57:05,680 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:57:12,421 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 39676_800.jpg
+2026-04-18 22:57:12,567 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:57:18,675 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 145115_540.jpg
+2026-04-18 22:57:18,793 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:57:32,900 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 68624_original.png
+2026-04-18 22:57:33,987 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/68624_original.png': Unknown argument: use_gpu
+2026-04-18 22:57:35,083 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/68624_original.png': Unknown argument: use_gpu
+2026-04-18 22:57:36,160 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/68624_original.png': Unknown argument: use_gpu
+2026-04-18 22:57:36,273 | INFO     | extractors.image_extractor | Успех на попытке 4 (Tesseract)
+2026-04-18 22:57:51,750 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 1783527_800.jpg
+2026-04-18 22:57:51,961 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:57:53,031 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для ffa452cf21a343f89ba531958b5bdf38.jpg
+2026-04-18 22:57:53,205 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:57:53,929 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 422345601_6251787.jpg
+2026-04-18 22:57:54,417 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:58:02,611 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 121793_original.gif
+2026-04-18 22:58:02,707 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:58:22,526 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 3823033_600.jpg
+2026-04-18 22:58:22,789 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:58:23,932 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 12492179_original.png
+2026-04-18 22:58:24,024 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:58:26,012 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 620529_600.png
+2026-04-18 22:58:26,287 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:58:32,376 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 530a0c14bfac93e04bbbd09ad1fca64c.jpg
+2026-04-18 22:58:33,473 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/530a0c14bfac93e04bbbd09ad1fca64c.jpg': Unknown argument: use_gpu
+2026-04-18 22:58:34,526 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/530a0c14bfac93e04bbbd09ad1fca64c.jpg': Unknown argument: use_gpu
+2026-04-18 22:58:34,610 | INFO     | extractors.image_extractor | Успех на попытке 3 (Tesseract)
+2026-04-18 22:58:39,386 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 121909_600.png
+2026-04-18 22:58:39,499 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:58:40,203 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 299483_original.jpg
+2026-04-18 22:58:40,643 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:58:52,513 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 353024_original.jpg
+2026-04-18 22:58:52,817 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:59:29,093 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для c5b78fd2cac4cf400f2d4919e9906427.jpg
+2026-04-18 22:59:29,277 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:59:36,037 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 4979320_original.jpg
+2026-04-18 22:59:39,074 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:59:41,522 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 5967_900.jpg
+2026-04-18 22:59:42,386 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:59:43,432 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 11953_800.jpg
+2026-04-18 22:59:45,202 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/11953_800.jpg': Unknown argument: use_gpu
+2026-04-18 22:59:45,325 | INFO     | extractors.image_extractor | Успех на попытке 2 (Tesseract)
+2026-04-18 22:59:46,077 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для f1add6390f50cb50ada7118c0848ddec.jpg
+2026-04-18 22:59:46,185 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:59:47,556 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 95606379-14438121-The_Prince_and_Princess_of_Wales_are_visiting_Pontypridd_ahead_o-a-109_1740588279240.jpg
+2026-04-18 22:59:47,742 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:59:49,486 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 2758318_600.png
+2026-04-18 22:59:49,673 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 22:59:55,159 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 10309_900.jpg
+2026-04-18 22:59:55,573 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:00:01,198 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 95612293-14438121-image-a-97_1740585973713.jpg
+2026-04-18 23:00:01,622 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:00:17,063 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 52043990928_2b726f3fe4_z.jpg
+2026-04-18 23:00:18,759 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/52043990928_2b726f3fe4_z.jpg': Unknown argument: use_gpu
+2026-04-18 23:00:20,445 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/52043990928_2b726f3fe4_z.jpg': Unknown argument: use_gpu
+2026-04-18 23:00:20,554 | INFO     | extractors.image_extractor | Успех на попытке 3 (Tesseract)
+2026-04-18 23:00:21,325 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 2750057_600.png
+2026-04-18 23:00:21,595 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:00:21,701 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 67883_original.png
+2026-04-18 23:00:22,745 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/67883_original.png': Unknown argument: use_gpu
+2026-04-18 23:00:22,822 | INFO     | extractors.image_extractor | Успех на попытке 2 (Tesseract)
+2026-04-18 23:00:36,696 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 118330_800.jpg
+2026-04-18 23:00:37,571 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:00:39,298 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 121909_original.png
+2026-04-18 23:00:39,424 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:00:43,429 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 1778109_1000.jpg
+2026-04-18 23:00:43,733 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:01:05,394 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 895859_600.png
+2026-04-18 23:01:05,625 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:01:07,290 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 14632765_original.jpg
+2026-04-18 23:01:08,479 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:01:14,749 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для Varvara_Turkestanova.jpg
+2026-04-18 23:01:14,957 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:01:15,771 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1725542279_Отраслевые форумы РБК 2024.pdf
+2026-04-18 23:01:15,782 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/Russia.pdf
+2026-04-18 23:01:15,782 | INFO     | extractors.pdf_extractor.PDFExtractor | PyMuPDF + OCR не дали результата для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/Russia.pdf', пробуем pdfplumber
+2026-04-18 23:01:15,803 | ERROR    | __main__ | Ошибка обработки файла /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/Russia.pdf
+Traceback (most recent call last):
+  File "/home/dodrios/Desktop/pizza_assorted/venv/lib/python3.14/site-packages/pdfplumber/pdf.py", line 50, in __init__
+    self.doc = PDFDocument(PDFParser(stream), password=password or "")
+               ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dodrios/Desktop/pizza_assorted/venv/lib/python3.14/site-packages/pdfminer/pdfdocument.py", line 741, in __init__
+    raise PDFSyntaxError("No /Root object! - Is this really a PDF?")
+pdfminer.pdfparser.PDFSyntaxError: No /Root object! - Is this really a PDF?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dodrios/Desktop/pizza_assorted/extractors/pdf_extractor.py", line 305, in _extract_with_pdfplumber
+    pdf = pdfplumber.open(self.file_path)
+  File "/home/dodrios/Desktop/pizza_assorted/venv/lib/python3.14/site-packages/pdfplumber/pdf.py", line 107, in open
+    return cls(
+        stream,
+    ...<7 lines>...
+        raise_unicode_errors=raise_unicode_errors,
+    )
+  File "/home/dodrios/Desktop/pizza_assorted/venv/lib/python3.14/site-packages/pdfplumber/pdf.py", line 52, in __init__
+    raise PdfminerException(e)
+pdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dodrios/Desktop/pizza_assorted/main.py", line 104, in main
+    extraction = extractor.extract()
+  File "/home/dodrios/Desktop/pizza_assorted/extractors/pdf_extractor.py", line 183, in extract
+    result = self._extract_with_pdfplumber(start)
+  File "/home/dodrios/Desktop/pizza_assorted/extractors/pdf_extractor.py", line 307, in _extract_with_pdfplumber
+    raise ExtractionError(
+        self.file_path, f"Не удалось открыть PDF через pdfplumber: {exc}"
+    ) from exc
+extractors.base.ExtractionError: Ошибка извлечения из '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/Russia.pdf': Не удалось открыть PDF через pdfplumber: No /Root object! - Is this really a PDF?
+2026-04-18 23:01:15,804 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/Strategiya_razblokirovki_aktivov_SPB_Banka.pdf
+2026-04-18 23:01:15,907 | INFO     | extractors.pdf_extractor.PDFExtractor | PyMuPDF не нашёл текст в '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/presentation.pdf' (24 стр.), пробуем OCR-фоллбэк
+2026-04-18 23:01:17,530 | INFO     | extractors.pdf_extractor.PDFExtractor | OCR-фоллбэк: обработаем 24 страниц через ImageExtractor
+2026-04-18 23:01:41,176 | INFO     | extractors.pdf_extractor.PDFExtractor | OCR-фоллбэк успешен для /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/presentation.pdf: 11841 символов
+2026-04-18 23:01:41,189 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/%D0%9E_%D1%82%D0%B5%D0%BA%D1%83%D1%89%D0%B5%D0%B8%CC%86_%D1%86%D0%B5%D0%BD%D0%BE%D0%B2%D0%BE%D0%B8%CC%86_%D1%81%D0%B8%D1%82%D1%83%D0%B0%D1%86%D0%B8%D0%B8_5_%D0%BC%D0%B0%D1%80%D1%82%D0%B0_2025_%D0%B3%D0%BE%D0%B4%D0%B0.pdf
+2026-04-18 23:01:41,190 | INFO     | extractors.pdf_extractor.PDFExtractor | PyMuPDF + OCR не дали результата для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/%D0%9E_%D1%82%D0%B5%D0%BA%D1%83%D1%89%D0%B5%D0%B8%CC%86_%D1%86%D0%B5%D0%BD%D0%BE%D0%B2%D0%BE%D0%B8%CC%86_%D1%81%D0%B8%D1%82%D1%83%D0%B0%D1%86%D0%B8%D0%B8_5_%D0%BC%D0%B0%D1%80%D1%82%D0%B0_2025_%D0%B3%D0%BE%D0%B4%D0%B0.pdf', пробуем pdfplumber
+2026-04-18 23:01:41,191 | ERROR    | __main__ | Ошибка обработки файла /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/%D0%9E_%D1%82%D0%B5%D0%BA%D1%83%D1%89%D0%B5%D0%B8%CC%86_%D1%86%D0%B5%D0%BD%D0%BE%D0%B2%D0%BE%D0%B8%CC%86_%D1%81%D0%B8%D1%82%D1%83%D0%B0%D1%86%D0%B8%D0%B8_5_%D0%BC%D0%B0%D1%80%D1%82%D0%B0_2025_%D0%B3%D0%BE%D0%B4%D0%B0.pdf
+Traceback (most recent call last):
+  File "/home/dodrios/Desktop/pizza_assorted/venv/lib/python3.14/site-packages/pdfplumber/pdf.py", line 50, in __init__
+    self.doc = PDFDocument(PDFParser(stream), password=password or "")
+               ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dodrios/Desktop/pizza_assorted/venv/lib/python3.14/site-packages/pdfminer/pdfdocument.py", line 741, in __init__
+    raise PDFSyntaxError("No /Root object! - Is this really a PDF?")
+pdfminer.pdfparser.PDFSyntaxError: No /Root object! - Is this really a PDF?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dodrios/Desktop/pizza_assorted/extractors/pdf_extractor.py", line 305, in _extract_with_pdfplumber
+    pdf = pdfplumber.open(self.file_path)
+  File "/home/dodrios/Desktop/pizza_assorted/venv/lib/python3.14/site-packages/pdfplumber/pdf.py", line 107, in open
+    return cls(
+        stream,
+    ...<7 lines>...
+        raise_unicode_errors=raise_unicode_errors,
+    )
+  File "/home/dodrios/Desktop/pizza_assorted/venv/lib/python3.14/site-packages/pdfplumber/pdf.py", line 52, in __init__
+    raise PdfminerException(e)
+pdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dodrios/Desktop/pizza_assorted/main.py", line 104, in main
+    extraction = extractor.extract()
+  File "/home/dodrios/Desktop/pizza_assorted/extractors/pdf_extractor.py", line 183, in extract
+    result = self._extract_with_pdfplumber(start)
+  File "/home/dodrios/Desktop/pizza_assorted/extractors/pdf_extractor.py", line 307, in _extract_with_pdfplumber
+    raise ExtractionError(
+        self.file_path, f"Не удалось открыть PDF через pdfplumber: {exc}"
+    ) from exc
+extractors.base.ExtractionError: Ошибка извлечения из '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/%D0%9E_%D1%82%D0%B5%D0%BA%D1%83%D1%89%D0%B5%D0%B8%CC%86_%D1%86%D0%B5%D0%BD%D0%BE%D0%B2%D0%BE%D0%B8%CC%86_%D1%81%D0%B8%D1%82%D1%83%D0%B0%D1%86%D0%B8%D0%B8_5_%D0%BC%D0%B0%D1%80%D1%82%D0%B0_2025_%D0%B3%D0%BE%D0%B4%D0%B0.pdf': Не удалось открыть PDF через pdfplumber: No /Root object! - Is this really a PDF?
+2026-04-18 23:01:41,345 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/20241017-euco-conclusions-en.pdf
+2026-04-18 23:01:41,347 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8%20%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20dg-yug.ru.pdf
+2026-04-18 23:01:41,349 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1679555052_Центр событий РБК .pdf
+2026-04-18 23:01:41,361 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/ADV21-2024-Monthly-Canal-Operations-Summary-June-2024.pdf
+2026-04-18 23:01:42,411 | INFO     | extractors.pdf_extractor.PDFExtractor | PyMuPDF не нашёл текст в '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/license_telematika_2017-2022.pdf' (1 стр.), пробуем OCR-фоллбэк
+2026-04-18 23:01:42,885 | INFO     | extractors.pdf_extractor.PDFExtractor | OCR-фоллбэк: обработаем 1 страниц через ImageExtractor
+2026-04-18 23:01:48,917 | INFO     | extractors.pdf_extractor.PDFExtractor | OCR-фоллбэк успешен для /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/license_telematika_2017-2022.pdf: 889 символов
+2026-04-18 23:01:50,801 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1738660894_Приложения к договору субаренды (2).pdf
+2026-04-18 23:01:50,932 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1725542351_Медиакит РБК Онлайн.pdf
+2026-04-18 23:01:51,043 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/neutrality-treaty.pdf
+2026-04-18 23:01:51,051 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1725542337_Медиакит РБК Телеканал.pdf
+2026-04-18 23:01:51,144 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1725542163_Медиакит РБК 360.pdf
+2026-04-18 23:01:51,154 | INFO     | extractors.pdf_extractor.PDFExtractor | PyMuPDF не нашёл текст в '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/%D0%92.%D0%90.-%D0%9E%D1%80%D0%BB%D0%BE%D0%B2%D1%83-%D0%BE%D1%82-%D0%90.%D0%98.-%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0.pdf' (2 стр.), пробуем OCR-фоллбэк
+2026-04-18 23:01:51,245 | INFO     | extractors.pdf_extractor.PDFExtractor | OCR-фоллбэк: обработаем 2 страниц через ImageExtractor
+2026-04-18 23:01:54,376 | INFO     | extractors.pdf_extractor.PDFExtractor | OCR-фоллбэк успешен для /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/%D0%92.%D0%90.-%D0%9E%D1%80%D0%BB%D0%BE%D0%B2%D1%83-%D0%BE%D1%82-%D0%90.%D0%98.-%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0.pdf: 2141 символов
+2026-04-18 23:08:09,351 | INFO     | scanner.file_scanner | Инициализация FileScanner: root_dir=/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты
+2026-04-18 23:08:09,351 | INFO     | scanner.file_scanner | Поддерживаемые расширения: 19 типов
+2026-04-18 23:08:09,351 | INFO     | scanner.file_scanner | Начало сканирования директории: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты
+2026-04-18 23:08:09,359 | INFO     | scanner.file_scanner | Сканирование завершено. Найдено поддерживаемых файлов: 1329
+2026-04-18 23:08:16,263 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 298141_original.jpg
+2026-04-18 23:08:24,129 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/298141_original.jpg': Unknown argument: show_log
+2026-04-18 23:08:26,414 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/298141_original.jpg': Unknown argument: show_log
+2026-04-18 23:08:28,752 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/298141_original.jpg': Unknown argument: show_log
+2026-04-18 23:08:28,961 | INFO     | extractors.image_extractor | Успех на попытке 4 (Tesseract)
+2026-04-18 23:08:29,420 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 1067302_800.jpg
+2026-04-18 23:08:30,104 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:08:32,376 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 17135_900.jpg
+2026-04-18 23:08:32,969 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:08:38,767 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 95613525-14438121-image-a-107_1740587037264.jpg
+2026-04-18 23:08:39,087 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:08:56,114 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 69148_original.png
+2026-04-18 23:08:57,382 | INFO     | extractors.image_extractor | Успех на попытке 1 (EasyOCR)
+2026-04-18 23:08:59,703 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 95612091-14438121-image-a-86_1740585245717.jpg
+2026-04-18 23:09:00,059 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:09:00,888 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 2920_original.jpg
+2026-04-18 23:09:02,753 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/2920_original.jpg': Unknown argument: show_log
+2026-04-18 23:09:04,721 | INFO     | extractors.image_extractor | Успех на попытке 2 (EasyOCR)
+2026-04-18 23:09:07,680 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 322568_1000.png
+2026-04-18 23:09:07,903 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:09:10,510 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 8037_900.jpg
+2026-04-18 23:09:10,931 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:09:11,032 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 1926959_300.jpg
+2026-04-18 23:09:12,406 | INFO     | extractors.image_extractor | Успех на попытке 1 (EasyOCR)
+2026-04-18 23:09:22,748 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 4154879_600.jpg
+2026-04-18 23:09:22,919 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:09:34,652 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 4aed48cb2f8ed96a8609218247d6c54b.jpg
+2026-04-18 23:09:34,815 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:09:43,046 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 4344978_original.jpg
+2026-04-18 23:09:43,236 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:10:07,752 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 4416_900.jpg
+2026-04-18 23:10:09,370 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/4416_900.jpg': Unknown argument: show_log
+2026-04-18 23:10:10,882 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/4416_900.jpg': Unknown argument: show_log
+2026-04-18 23:10:10,987 | INFO     | extractors.image_extractor | Успех на попытке 3 (Tesseract)
+2026-04-18 23:10:19,770 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 75e04730e60ee7c22e590e647ab7b1f2.jpg
+2026-04-18 23:10:19,873 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:10:20,257 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 12156_800.jpg
+2026-04-18 23:10:20,377 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:10:30,438 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 6818_900.jpg
+2026-04-18 23:10:30,711 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:10:30,808 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 1926844_300.jpg
+2026-04-18 23:10:30,931 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:10:39,899 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для IMG_3137.jpg
+2026-04-18 23:10:40,314 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:10:44,545 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 237988_800.png
+2026-04-18 23:10:44,737 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:10:47,575 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 344806_original.jpg
+2026-04-18 23:10:47,811 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:10:48,640 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 1778652_original.jpg
+2026-04-18 23:10:48,776 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:10:59,305 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для fc408a595487f2c954e0fdb8ca8f0b2f.jpg
+2026-04-18 23:10:59,516 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:11:01,167 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 121681_600.png
+2026-04-18 23:11:02,503 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:11:05,069 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для i_026.png
+2026-04-18 23:11:06,942 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png': Unknown argument: show_log
+2026-04-18 23:11:08,869 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png': Unknown argument: show_log
+2026-04-18 23:11:10,809 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png': Unknown argument: show_log
+2026-04-18 23:11:15,293 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png': Unknown argument: show_log
+2026-04-18 23:11:17,190 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png': Unknown argument: show_log
+2026-04-18 23:11:19,154 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png': Unknown argument: show_log
+2026-04-18 23:11:19,154 | WARNING  | extractors.image_extractor.ImageExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png' — OCR не смог извлечь текст
+2026-04-18 23:11:27,795 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 172704_800.jpg
+2026-04-18 23:11:28,401 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:11:48,508 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 121681_original.png
+2026-04-18 23:11:51,698 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:11:54,533 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 54bf4e7c258f1b85df7b02cfbe538bd6.jpg
+2026-04-18 23:11:54,624 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:12:02,176 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 39676_800.jpg
+2026-04-18 23:12:02,339 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:12:08,810 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 145115_540.jpg
+2026-04-18 23:12:08,937 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:12:23,311 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 68624_original.png
+2026-04-18 23:12:24,361 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/68624_original.png': Unknown argument: show_log
+2026-04-18 23:12:25,501 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/68624_original.png': Unknown argument: show_log
+2026-04-18 23:12:26,539 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/68624_original.png': Unknown argument: show_log
+2026-04-18 23:12:26,652 | INFO     | extractors.image_extractor | Успех на попытке 4 (Tesseract)
+2026-04-18 23:12:42,676 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 1783527_800.jpg
+2026-04-18 23:12:42,897 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:12:44,081 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для ffa452cf21a343f89ba531958b5bdf38.jpg
+2026-04-18 23:12:44,267 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:12:45,072 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 422345601_6251787.jpg
+2026-04-18 23:12:45,587 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:12:54,302 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 121793_original.gif
+2026-04-18 23:12:54,406 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:13:14,673 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 3823033_600.jpg
+2026-04-18 23:13:14,973 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:13:16,194 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 12492179_original.png
+2026-04-18 23:13:16,293 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:13:18,394 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 620529_600.png
+2026-04-18 23:13:18,679 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:13:25,020 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 530a0c14bfac93e04bbbd09ad1fca64c.jpg
+2026-04-18 23:13:26,201 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/530a0c14bfac93e04bbbd09ad1fca64c.jpg': Unknown argument: show_log
+2026-04-18 23:13:27,386 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/530a0c14bfac93e04bbbd09ad1fca64c.jpg': Unknown argument: show_log
+2026-04-18 23:13:27,472 | INFO     | extractors.image_extractor | Успех на попытке 3 (Tesseract)
+2026-04-18 23:13:32,271 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 121909_600.png
+2026-04-18 23:13:32,393 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:13:33,128 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 299483_original.jpg
+2026-04-18 23:13:33,552 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:13:45,867 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 353024_original.jpg
+2026-04-18 23:13:46,190 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:14:23,915 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для c5b78fd2cac4cf400f2d4919e9906427.jpg
+2026-04-18 23:14:24,080 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:14:30,826 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 4979320_original.jpg
+2026-04-18 23:14:33,743 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:14:36,226 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 5967_900.jpg
+2026-04-18 23:14:37,166 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:14:38,223 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 11953_800.jpg
+2026-04-18 23:14:40,122 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/11953_800.jpg': Unknown argument: show_log
+2026-04-18 23:14:40,241 | INFO     | extractors.image_extractor | Успех на попытке 2 (Tesseract)
+2026-04-18 23:14:41,021 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для f1add6390f50cb50ada7118c0848ddec.jpg
+2026-04-18 23:14:41,129 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:14:42,526 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 95606379-14438121-The_Prince_and_Princess_of_Wales_are_visiting_Pontypridd_ahead_o-a-109_1740588279240.jpg
+2026-04-18 23:14:42,704 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:14:44,513 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 2758318_600.png
+2026-04-18 23:14:44,692 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:14:50,485 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 10309_900.jpg
+2026-04-18 23:14:50,922 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:14:57,660 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 95612293-14438121-image-a-97_1740585973713.jpg
+2026-04-18 23:14:58,090 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:15:15,304 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 52043990928_2b726f3fe4_z.jpg
+2026-04-18 23:15:16,980 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/52043990928_2b726f3fe4_z.jpg': Unknown argument: show_log
+2026-04-18 23:15:18,772 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/52043990928_2b726f3fe4_z.jpg': Unknown argument: show_log
+2026-04-18 23:15:18,877 | INFO     | extractors.image_extractor | Успех на попытке 3 (Tesseract)
+2026-04-18 23:15:19,637 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 2750057_600.png
+2026-04-18 23:15:19,917 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:15:20,042 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 67883_original.png
+2026-04-18 23:15:21,217 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/67883_original.png': Unknown argument: show_log
+2026-04-18 23:15:21,307 | INFO     | extractors.image_extractor | Успех на попытке 2 (Tesseract)
+2026-04-18 23:15:35,658 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 118330_800.jpg
+2026-04-18 23:15:36,585 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:15:38,258 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 121909_original.png
+2026-04-18 23:15:38,376 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:15:42,504 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 1778109_1000.jpg
+2026-04-18 23:15:42,837 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:16:04,988 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 895859_600.png
+2026-04-18 23:16:05,216 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:16:06,902 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 14632765_original.jpg
+2026-04-18 23:16:08,046 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:16:14,367 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для Varvara_Turkestanova.jpg
+2026-04-18 23:16:14,591 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:16:15,430 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1725542279_Отраслевые форумы РБК 2024.pdf
+2026-04-18 23:16:15,431 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1725542279_Отраслевые форумы РБК 2024.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:16:15,431 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/Russia.pdf
+2026-04-18 23:16:15,431 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/Russia.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:16:15,431 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/Strategiya_razblokirovki_aktivov_SPB_Banka.pdf
+2026-04-18 23:16:15,431 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/Strategiya_razblokirovki_aktivov_SPB_Banka.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:16:15,535 | INFO     | extractors.pdf_extractor.PDFExtractor | PyMuPDF не нашёл текст в '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/presentation.pdf' (24 стр.), пробуем OCR-фоллбэк
+2026-04-18 23:16:17,233 | INFO     | extractors.pdf_extractor.PDFExtractor | OCR-фоллбэк: обработаем 24 страниц через ImageExtractor
+2026-04-18 23:16:41,589 | INFO     | extractors.pdf_extractor.PDFExtractor | OCR-фоллбэк успешен для /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/presentation.pdf: 11841 символов
+2026-04-18 23:16:41,603 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/%D0%9E_%D1%82%D0%B5%D0%BA%D1%83%D1%89%D0%B5%D0%B8%CC%86_%D1%86%D0%B5%D0%BD%D0%BE%D0%B2%D0%BE%D0%B8%CC%86_%D1%81%D0%B8%D1%82%D1%83%D0%B0%D1%86%D0%B8%D0%B8_5_%D0%BC%D0%B0%D1%80%D1%82%D0%B0_2025_%D0%B3%D0%BE%D0%B4%D0%B0.pdf
+2026-04-18 23:16:41,603 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/%D0%9E_%D1%82%D0%B5%D0%BA%D1%83%D1%89%D0%B5%D0%B8%CC%86_%D1%86%D0%B5%D0%BD%D0%BE%D0%B2%D0%BE%D0%B8%CC%86_%D1%81%D0%B8%D1%82%D1%83%D0%B0%D1%86%D0%B8%D0%B8_5_%D0%BC%D0%B0%D1%80%D1%82%D0%B0_2025_%D0%B3%D0%BE%D0%B4%D0%B0.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:16:41,745 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/20241017-euco-conclusions-en.pdf
+2026-04-18 23:16:41,746 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/20241017-euco-conclusions-en.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:16:41,746 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8%20%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20dg-yug.ru.pdf
+2026-04-18 23:16:41,746 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8%20%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20dg-yug.ru.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:16:41,746 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1679555052_Центр событий РБК .pdf
+2026-04-18 23:16:41,746 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1679555052_Центр событий РБК .pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:16:41,746 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/ADV21-2024-Monthly-Canal-Operations-Summary-June-2024.pdf
+2026-04-18 23:16:41,746 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/ADV21-2024-Monthly-Canal-Operations-Summary-June-2024.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:16:42,828 | INFO     | extractors.pdf_extractor.PDFExtractor | PyMuPDF не нашёл текст в '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/license_telematika_2017-2022.pdf' (1 стр.), пробуем OCR-фоллбэк
+2026-04-18 23:16:43,352 | INFO     | extractors.pdf_extractor.PDFExtractor | OCR-фоллбэк: обработаем 1 страниц через ImageExtractor
+2026-04-18 23:16:49,486 | INFO     | extractors.pdf_extractor.PDFExtractor | OCR-фоллбэк успешен для /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/license_telematika_2017-2022.pdf: 889 символов
+2026-04-18 23:16:51,604 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1738660894_Приложения к договору субаренды (2).pdf
+2026-04-18 23:16:51,604 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1738660894_Приложения к договору субаренды (2).pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:16:51,741 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1725542351_Медиакит РБК Онлайн.pdf
+2026-04-18 23:16:51,742 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1725542351_Медиакит РБК Онлайн.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:16:51,877 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/neutrality-treaty.pdf
+2026-04-18 23:16:51,877 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/neutrality-treaty.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:16:51,891 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1725542337_Медиакит РБК Телеканал.pdf
+2026-04-18 23:16:51,892 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1725542337_Медиакит РБК Телеканал.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:16:51,991 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1725542163_Медиакит РБК 360.pdf
+2026-04-18 23:16:51,992 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1725542163_Медиакит РБК 360.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:16:51,992 | INFO     | extractors.pdf_extractor.PDFExtractor | PyMuPDF не нашёл текст в '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/%D0%92.%D0%90.-%D0%9E%D1%80%D0%BB%D0%BE%D0%B2%D1%83-%D0%BE%D1%82-%D0%90.%D0%98.-%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0.pdf' (2 стр.), пробуем OCR-фоллбэк
+2026-04-18 23:16:52,095 | INFO     | extractors.pdf_extractor.PDFExtractor | OCR-фоллбэк: обработаем 2 страниц через ImageExtractor
+2026-04-18 23:16:55,507 | INFO     | extractors.pdf_extractor.PDFExtractor | OCR-фоллбэк успешен для /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/%D0%92.%D0%90.-%D0%9E%D1%80%D0%BB%D0%BE%D0%B2%D1%83-%D0%BE%D1%82-%D0%90.%D0%98.-%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0.pdf: 2141 символов
+2026-04-18 23:24:21,954 | INFO     | scanner.file_scanner | Инициализация FileScanner: root_dir=/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты
+2026-04-18 23:24:21,954 | INFO     | scanner.file_scanner | Поддерживаемые расширения: 19 типов
+2026-04-18 23:24:21,954 | INFO     | scanner.file_scanner | Начало сканирования директории: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты
+2026-04-18 23:24:21,966 | INFO     | scanner.file_scanner | Сканирование завершено. Найдено поддерживаемых файлов: 1329
+2026-04-18 23:24:21,968 | INFO     | utils.parallel | Запуск параллельной обработки: 1329 файлов, 32 потоков
+2026-04-18 23:24:23,295 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 298141_original.jpg
+2026-04-18 23:24:23,441 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 1067302_800.jpg
+2026-04-18 23:24:24,125 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 17135_900.jpg
+2026-04-18 23:24:25,164 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 95613525-14438121-image-a-107_1740587037264.jpg
+2026-04-18 23:24:25,630 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:24:25,882 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 69148_original.png
+2026-04-18 23:24:26,451 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:24:26,556 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 95612091-14438121-image-a-86_1740585245717.jpg
+2026-04-18 23:24:26,732 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:24:27,074 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 2920_original.jpg
+2026-04-18 23:24:27,618 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 322568_1000.png
+2026-04-18 23:24:27,845 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 1926959_300.jpg
+2026-04-18 23:24:27,866 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:24:28,023 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 8037_900.jpg
+2026-04-18 23:24:28,424 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:24:29,715 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:24:29,935 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 4154879_600.jpg
+2026-04-18 23:24:30,422 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:24:32,044 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 4aed48cb2f8ed96a8609218247d6c54b.jpg
+2026-04-18 23:24:32,724 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:24:34,436 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 4344978_original.jpg
+2026-04-18 23:24:35,062 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:24:39,319 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 4416_900.jpg
+2026-04-18 23:24:41,060 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 75e04730e60ee7c22e590e647ab7b1f2.jpg
+2026-04-18 23:24:41,308 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:24:41,343 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 12156_800.jpg
+2026-04-18 23:24:41,595 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:24:43,106 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 1926844_300.jpg
+2026-04-18 23:24:43,396 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 6818_900.jpg
+2026-04-18 23:24:43,578 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:24:44,222 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:24:47,149 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для IMG_3137.jpg
+2026-04-18 23:24:47,590 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 237988_800.png
+2026-04-18 23:24:48,065 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:24:48,178 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:24:48,364 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 1778652_original.jpg
+2026-04-18 23:24:48,378 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 344806_original.jpg
+2026-04-18 23:24:48,785 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:24:49,230 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:24:50,308 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для fc408a595487f2c954e0fdb8ca8f0b2f.jpg
+2026-04-18 23:24:50,828 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:24:50,882 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 121681_600.png
+2026-04-18 23:24:51,910 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для i_026.png
+2026-04-18 23:24:53,779 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 172704_800.jpg
+2026-04-18 23:24:53,956 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:24:55,593 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:24:57,312 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 54bf4e7c258f1b85df7b02cfbe538bd6.jpg
+2026-04-18 23:24:57,502 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 121681_original.png
+2026-04-18 23:24:57,580 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:24:58,348 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 39676_800.jpg
+2026-04-18 23:24:58,923 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:24:59,458 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 145115_540.jpg
+2026-04-18 23:24:59,871 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:25:01,635 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 68624_original.png
+2026-04-18 23:25:04,990 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:25:06,320 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 1783527_800.jpg
+2026-04-18 23:25:06,934 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для ffa452cf21a343f89ba531958b5bdf38.jpg
+2026-04-18 23:25:07,030 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:25:07,245 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 422345601_6251787.jpg
+2026-04-18 23:25:07,510 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:25:08,736 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:25:09,016 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 121793_original.gif
+2026-04-18 23:25:09,287 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:25:15,664 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 12492179_original.png
+2026-04-18 23:25:15,665 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 3823033_600.jpg
+2026-04-18 23:25:16,359 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:25:16,707 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 620529_600.png
+2026-04-18 23:25:16,712 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:25:17,642 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 530a0c14bfac93e04bbbd09ad1fca64c.jpg
+2026-04-18 23:25:17,730 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:25:18,693 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 121909_600.png
+2026-04-18 23:25:19,024 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 299483_original.jpg
+2026-04-18 23:25:19,077 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:25:20,368 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:25:20,862 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 353024_original.jpg
+2026-04-18 23:25:22,153 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:25:29,110 | INFO     | extractors.image_extractor | Успех на попытке 1 (EasyOCR)
+2026-04-18 23:25:30,218 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для c5b78fd2cac4cf400f2d4919e9906427.jpg
+2026-04-18 23:25:31,350 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:25:32,655 | INFO     | extractors.image_extractor | Успех на попытке 1 (EasyOCR)
+2026-04-18 23:25:32,909 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 4979320_original.jpg
+2026-04-18 23:25:33,105 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 11953_800.jpg
+2026-04-18 23:25:33,229 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для f1add6390f50cb50ada7118c0848ddec.jpg
+2026-04-18 23:25:33,623 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 5967_900.jpg
+2026-04-18 23:25:33,629 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:25:33,864 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 95606379-14438121-The_Prince_and_Princess_of_Wales_are_visiting_Pontypridd_ahead_o-a-109_1740588279240.jpg
+2026-04-18 23:25:34,507 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 2758318_600.png
+2026-04-18 23:25:34,525 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:25:35,219 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:25:36,986 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 10309_900.jpg
+2026-04-18 23:25:37,215 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 95612293-14438121-image-a-97_1740585973713.jpg
+2026-04-18 23:25:38,184 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:25:38,484 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:25:39,136 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:25:39,806 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 52043990928_2b726f3fe4_z.jpg
+2026-04-18 23:25:40,620 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 67883_original.png
+2026-04-18 23:25:40,623 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 2750057_600.png
+2026-04-18 23:25:42,328 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:25:44,176 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:25:44,809 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 118330_800.jpg
+2026-04-18 23:25:45,428 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 121909_original.png
+2026-04-18 23:25:45,593 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/68624_original.png': Unknown argument: use_gpu
+2026-04-18 23:25:45,600 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/4416_900.jpg': Unknown argument: use_gpu
+2026-04-18 23:25:45,646 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/2920_original.jpg': Unknown argument: use_gpu
+2026-04-18 23:25:45,662 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png': Unknown argument: use_gpu
+2026-04-18 23:25:45,663 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/298141_original.jpg': Unknown argument: use_gpu
+2026-04-18 23:25:45,664 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/530a0c14bfac93e04bbbd09ad1fca64c.jpg': Unknown argument: use_gpu
+2026-04-18 23:25:46,018 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:25:47,095 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/11953_800.jpg': Unknown argument: use_gpu
+2026-04-18 23:25:47,232 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 1778109_1000.jpg
+2026-04-18 23:25:47,525 | INFO     | extractors.image_extractor | Успех на попытке 2 (Tesseract)
+2026-04-18 23:25:48,357 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:25:48,437 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:25:50,464 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 895859_600.png
+2026-04-18 23:25:51,366 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:25:51,627 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 14632765_original.jpg
+2026-04-18 23:25:53,260 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для Varvara_Turkestanova.jpg
+2026-04-18 23:25:53,450 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1725542279_Отраслевые форумы РБК 2024.pdf
+2026-04-18 23:25:53,520 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/Russia.pdf
+2026-04-18 23:25:53,526 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1725542279_Отраслевые форумы РБК 2024.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:25:53,540 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/Russia.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:25:53,564 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/Strategiya_razblokirovki_aktivov_SPB_Banka.pdf
+2026-04-18 23:25:53,593 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/Strategiya_razblokirovki_aktivov_SPB_Banka.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:25:53,678 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/%D0%9E_%D1%82%D0%B5%D0%BA%D1%83%D1%89%D0%B5%D0%B8%CC%86_%D1%86%D0%B5%D0%BD%D0%BE%D0%B2%D0%BE%D0%B8%CC%86_%D1%81%D0%B8%D1%82%D1%83%D0%B0%D1%86%D0%B8%D0%B8_5_%D0%BC%D0%B0%D1%80%D1%82%D0%B0_2025_%D0%B3%D0%BE%D0%B4%D0%B0.pdf
+2026-04-18 23:25:53,784 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/20241017-euco-conclusions-en.pdf
+2026-04-18 23:25:53,799 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/%D0%9E_%D1%82%D0%B5%D0%BA%D1%83%D1%89%D0%B5%D0%B8%CC%86_%D1%86%D0%B5%D0%BD%D0%BE%D0%B2%D0%BE%D0%B8%CC%86_%D1%81%D0%B8%D1%82%D1%83%D0%B0%D1%86%D0%B8%D0%B8_5_%D0%BC%D0%B0%D1%80%D1%82%D0%B0_2025_%D0%B3%D0%BE%D0%B4%D0%B0.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:25:53,856 | INFO     | extractors.pdf_extractor.PDFExtractor | PyMuPDF не нашёл текст в '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/presentation.pdf' (24 стр.), пробуем OCR-фоллбэк
+2026-04-18 23:25:53,854 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/20241017-euco-conclusions-en.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:25:53,980 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8%20%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20dg-yug.ru.pdf
+2026-04-18 23:25:54,065 | INFO     | extractors.pdf_extractor.PDFExtractor | PyMuPDF не нашёл текст в '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/license_telematika_2017-2022.pdf' (1 стр.), пробуем OCR-фоллбэк
+2026-04-18 23:25:54,095 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/ADV21-2024-Monthly-Canal-Operations-Summary-June-2024.pdf
+2026-04-18 23:25:54,104 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8%20%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20dg-yug.ru.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:25:54,200 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1679555052_Центр событий РБК .pdf
+2026-04-18 23:25:54,201 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/ADV21-2024-Monthly-Canal-Operations-Summary-June-2024.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:25:54,232 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1679555052_Центр событий РБК .pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:25:54,330 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:25:54,510 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1725542351_Медиакит РБК Онлайн.pdf
+2026-04-18 23:25:54,522 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1725542351_Медиакит РБК Онлайн.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:25:54,595 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1738660894_Приложения к договору субаренды (2).pdf
+2026-04-18 23:25:54,645 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/neutrality-treaty.pdf
+2026-04-18 23:25:54,656 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1738660894_Приложения к договору субаренды (2).pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:25:54,683 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/neutrality-treaty.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:25:55,024 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1725542337_Медиакит РБК Телеканал.pdf
+2026-04-18 23:25:55,079 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1725542163_Медиакит РБК 360.pdf
+2026-04-18 23:25:55,106 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1725542337_Медиакит РБК Телеканал.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:25:55,258 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1725542163_Медиакит РБК 360.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:25:55,479 | INFO     | extractors.pdf_extractor.PDFExtractor | PyMuPDF не нашёл текст в '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/%D0%92.%D0%90.-%D0%9E%D1%80%D0%BB%D0%BE%D0%B2%D1%83-%D0%BE%D1%82-%D0%90.%D0%98.-%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0.pdf' (2 стр.), пробуем OCR-фоллбэк
+2026-04-18 23:25:55,901 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:25:58,923 | INFO     | extractors.pdf_extractor.PDFExtractor | OCR-фоллбэк: обработаем 1 страниц через ImageExtractor
+2026-04-18 23:25:59,035 | INFO     | extractors.pdf_extractor.PDFExtractor | OCR-фоллбэк: обработаем 2 страниц через ImageExtractor
+2026-04-18 23:26:01,544 | INFO     | extractors.pdf_extractor.PDFExtractor | OCR-фоллбэк: обработаем 24 страниц через ImageExtractor
+2026-04-18 23:26:04,235 | INFO     | extractors.pdf_extractor.PDFExtractor | OCR-фоллбэк успешен для /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/%D0%92.%D0%90.-%D0%9E%D1%80%D0%BB%D0%BE%D0%B2%D1%83-%D0%BE%D1%82-%D0%90.%D0%98.-%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0.pdf: 2141 символов
+2026-04-18 23:26:07,999 | INFO     | extractors.pdf_extractor.PDFExtractor | OCR-фоллбэк успешен для /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/license_telematika_2017-2022.pdf: 889 символов
+2026-04-18 23:26:12,855 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/530a0c14bfac93e04bbbd09ad1fca64c.jpg': Unknown argument: use_gpu
+2026-04-18 23:26:12,955 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/68624_original.png': Unknown argument: use_gpu
+2026-04-18 23:26:13,116 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/67883_original.png': Unknown argument: use_gpu
+2026-04-18 23:26:13,313 | INFO     | extractors.image_extractor | Успех на попытке 3 (Tesseract)
+2026-04-18 23:26:13,638 | INFO     | extractors.image_extractor | Успех на попытке 2 (Tesseract)
+2026-04-18 23:26:14,681 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/52043990928_2b726f3fe4_z.jpg': Unknown argument: use_gpu
+2026-04-18 23:26:15,118 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/4416_900.jpg': Unknown argument: use_gpu
+2026-04-18 23:26:15,400 | INFO     | extractors.image_extractor | Успех на попытке 3 (Tesseract)
+2026-04-18 23:26:15,585 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png': Unknown argument: use_gpu
+2026-04-18 23:26:15,933 | INFO     | extractors.image_extractor | Успех на попытке 2 (EasyOCR)
+2026-04-18 23:26:16,022 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/298141_original.jpg': Unknown argument: use_gpu
+2026-04-18 23:26:19,012 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/68624_original.png': Unknown argument: use_gpu
+2026-04-18 23:26:19,301 | INFO     | extractors.image_extractor | Успех на попытке 4 (Tesseract)
+2026-04-18 23:26:20,590 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/52043990928_2b726f3fe4_z.jpg': Unknown argument: use_gpu
+2026-04-18 23:26:20,842 | INFO     | extractors.image_extractor | Успех на попытке 3 (Tesseract)
+2026-04-18 23:26:21,007 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png': Unknown argument: use_gpu
+2026-04-18 23:26:21,392 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/298141_original.jpg': Unknown argument: use_gpu
+2026-04-18 23:26:21,661 | INFO     | extractors.image_extractor | Успех на попытке 4 (Tesseract)
+2026-04-18 23:26:26,232 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png': Unknown argument: use_gpu
+2026-04-18 23:26:28,430 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png': Unknown argument: use_gpu
+2026-04-18 23:26:30,680 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png': Unknown argument: use_gpu
+2026-04-18 23:26:30,680 | WARNING  | extractors.image_extractor.ImageExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png' — OCR не смог извлечь текст
+2026-04-18 23:26:37,330 | INFO     | extractors.pdf_extractor.PDFExtractor | OCR-фоллбэк успешен для /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/presentation.pdf: 11841 символов
+2026-04-18 23:27:48,756 | INFO     | scanner.file_scanner | Инициализация FileScanner: root_dir=/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты
+2026-04-18 23:27:48,756 | INFO     | scanner.file_scanner | Поддерживаемые расширения: 19 типов
+2026-04-18 23:27:48,756 | INFO     | scanner.file_scanner | Начало сканирования директории: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты
+2026-04-18 23:27:48,765 | INFO     | scanner.file_scanner | Сканирование завершено. Найдено поддерживаемых файлов: 1329
+2026-04-18 23:27:48,767 | INFO     | utils.parallel | Запуск параллельной обработки: 1329 файлов, 32 потоков
+2026-04-18 23:27:49,821 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 298141_original.jpg
+2026-04-18 23:27:50,159 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 1067302_800.jpg
+2026-04-18 23:27:50,253 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 17135_900.jpg
+2026-04-18 23:27:52,126 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 95613525-14438121-image-a-107_1740587037264.jpg
+2026-04-18 23:27:52,529 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:27:53,007 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:27:53,050 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 69148_original.png
+2026-04-18 23:27:53,480 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:27:53,574 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 95612091-14438121-image-a-86_1740585245717.jpg
+2026-04-18 23:27:54,194 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 2920_original.jpg
+2026-04-18 23:27:54,769 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 322568_1000.png
+2026-04-18 23:27:54,916 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 1926959_300.jpg
+2026-04-18 23:27:55,078 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:27:55,265 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 8037_900.jpg
+2026-04-18 23:27:55,691 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:27:57,291 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:27:57,305 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 4154879_600.jpg
+2026-04-18 23:27:57,947 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:27:59,589 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 4aed48cb2f8ed96a8609218247d6c54b.jpg
+2026-04-18 23:28:00,320 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:28:02,350 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 4344978_original.jpg
+2026-04-18 23:28:02,931 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:28:07,301 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 4416_900.jpg
+2026-04-18 23:28:09,252 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 75e04730e60ee7c22e590e647ab7b1f2.jpg
+2026-04-18 23:28:09,652 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 12156_800.jpg
+2026-04-18 23:28:09,709 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:28:09,963 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:28:11,538 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 1926844_300.jpg
+2026-04-18 23:28:11,814 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 6818_900.jpg
+2026-04-18 23:28:12,004 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:28:12,723 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:28:15,729 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для IMG_3137.jpg
+2026-04-18 23:28:16,366 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 237988_800.png
+2026-04-18 23:28:16,735 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:28:16,867 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:28:17,005 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 344806_original.jpg
+2026-04-18 23:28:17,017 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 1778652_original.jpg
+2026-04-18 23:28:17,446 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:28:17,869 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:28:18,849 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для fc408a595487f2c954e0fdb8ca8f0b2f.jpg
+2026-04-18 23:28:19,455 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:28:19,588 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 121681_600.png
+2026-04-18 23:28:20,823 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для i_026.png
+2026-04-18 23:28:22,659 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:28:22,772 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 172704_800.jpg
+2026-04-18 23:28:24,850 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:28:26,487 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 121681_original.png
+2026-04-18 23:28:26,594 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 54bf4e7c258f1b85df7b02cfbe538bd6.jpg
+2026-04-18 23:28:26,833 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:28:27,341 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 39676_800.jpg
+2026-04-18 23:28:27,866 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:28:28,422 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 145115_540.jpg
+2026-04-18 23:28:28,896 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:28:31,006 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 68624_original.png
+2026-04-18 23:28:33,921 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:28:35,330 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 1783527_800.jpg
+2026-04-18 23:28:36,055 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:28:36,200 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для ffa452cf21a343f89ba531958b5bdf38.jpg
+2026-04-18 23:28:36,320 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 422345601_6251787.jpg
+2026-04-18 23:28:36,946 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:28:38,054 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:28:38,295 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 121793_original.gif
+2026-04-18 23:28:38,656 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:28:45,322 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 3823033_600.jpg
+2026-04-18 23:28:45,326 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 12492179_original.png
+2026-04-18 23:28:45,737 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:28:46,159 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:28:46,408 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 620529_600.png
+2026-04-18 23:28:47,405 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 530a0c14bfac93e04bbbd09ad1fca64c.jpg
+2026-04-18 23:28:47,410 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:28:48,282 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 121909_600.png
+2026-04-18 23:28:48,671 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 299483_original.jpg
+2026-04-18 23:28:48,723 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:28:50,026 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:28:50,696 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 353024_original.jpg
+2026-04-18 23:28:51,945 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:29:00,101 | INFO     | extractors.image_extractor | Успех на попытке 1 (EasyOCR)
+2026-04-18 23:29:01,269 | INFO     | extractors.image_extractor | Успех на попытке 1 (EasyOCR)
+2026-04-18 23:29:01,406 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для c5b78fd2cac4cf400f2d4919e9906427.jpg
+2026-04-18 23:29:02,157 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:29:03,342 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 4979320_original.jpg
+2026-04-18 23:29:03,383 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 11953_800.jpg
+2026-04-18 23:29:03,599 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 5967_900.jpg
+2026-04-18 23:29:03,855 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для f1add6390f50cb50ada7118c0848ddec.jpg
+2026-04-18 23:29:04,246 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:29:04,630 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 95606379-14438121-The_Prince_and_Princess_of_Wales_are_visiting_Pontypridd_ahead_o-a-109_1740588279240.jpg
+2026-04-18 23:29:04,912 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 2758318_600.png
+2026-04-18 23:29:05,368 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:29:05,567 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:29:07,458 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 10309_900.jpg
+2026-04-18 23:29:08,041 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 95612293-14438121-image-a-97_1740585973713.jpg
+2026-04-18 23:29:08,046 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:29:09,249 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:29:09,877 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:29:10,527 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 52043990928_2b726f3fe4_z.jpg
+2026-04-18 23:29:11,519 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 2750057_600.png
+2026-04-18 23:29:11,527 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 67883_original.png
+2026-04-18 23:29:12,364 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/68624_original.png': Unknown argument: use_gpu
+2026-04-18 23:29:12,365 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/4416_900.jpg': Unknown argument: use_gpu
+2026-04-18 23:29:12,365 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/2920_original.jpg': Unknown argument: use_gpu
+2026-04-18 23:29:12,367 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png': Unknown argument: use_gpu
+2026-04-18 23:29:12,368 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/298141_original.jpg': Unknown argument: use_gpu
+2026-04-18 23:29:12,888 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:29:14,403 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/530a0c14bfac93e04bbbd09ad1fca64c.jpg': Unknown argument: use_gpu
+2026-04-18 23:29:14,991 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:29:16,176 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 118330_800.jpg
+2026-04-18 23:29:16,792 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/11953_800.jpg': Unknown argument: use_gpu
+2026-04-18 23:29:17,005 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 121909_original.png
+2026-04-18 23:29:17,363 | INFO     | extractors.image_extractor | Успех на попытке 2 (Tesseract)
+2026-04-18 23:29:17,446 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:29:18,557 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 1778109_1000.jpg
+2026-04-18 23:29:19,679 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:29:19,839 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:29:21,894 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 895859_600.png
+2026-04-18 23:29:22,804 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:29:23,082 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для 14632765_original.jpg
+2026-04-18 23:29:24,669 | INFO     | extractors.image_extractor | Tesseract/EasyOCR вернул пустой результат → запускаем усиленную предобработку для Varvara_Turkestanova.jpg
+2026-04-18 23:29:24,956 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/Russia.pdf
+2026-04-18 23:29:25,013 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/Russia.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:29:25,037 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1725542279_Отраслевые форумы РБК 2024.pdf
+2026-04-18 23:29:25,050 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1725542279_Отраслевые форумы РБК 2024.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:29:25,056 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/Strategiya_razblokirovki_aktivov_SPB_Banka.pdf
+2026-04-18 23:29:25,056 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/Strategiya_razblokirovki_aktivov_SPB_Banka.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:29:25,059 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/%D0%9E_%D1%82%D0%B5%D0%BA%D1%83%D1%89%D0%B5%D0%B8%CC%86_%D1%86%D0%B5%D0%BD%D0%BE%D0%B2%D0%BE%D0%B8%CC%86_%D1%81%D0%B8%D1%82%D1%83%D0%B0%D1%86%D0%B8%D0%B8_5_%D0%BC%D0%B0%D1%80%D1%82%D0%B0_2025_%D0%B3%D0%BE%D0%B4%D0%B0.pdf
+2026-04-18 23:29:25,060 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/%D0%9E_%D1%82%D0%B5%D0%BA%D1%83%D1%89%D0%B5%D0%B8%CC%86_%D1%86%D0%B5%D0%BD%D0%BE%D0%B2%D0%BE%D0%B8%CC%86_%D1%81%D0%B8%D1%82%D1%83%D0%B0%D1%86%D0%B8%D0%B8_5_%D0%BC%D0%B0%D1%80%D1%82%D0%B0_2025_%D0%B3%D0%BE%D0%B4%D0%B0.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:29:25,400 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1679555052_Центр событий РБК .pdf
+2026-04-18 23:29:25,412 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/20241017-euco-conclusions-en.pdf
+2026-04-18 23:29:25,453 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1679555052_Центр событий РБК .pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:29:25,454 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/ADV21-2024-Monthly-Canal-Operations-Summary-June-2024.pdf
+2026-04-18 23:29:25,512 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8%20%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20dg-yug.ru.pdf
+2026-04-18 23:29:25,516 | INFO     | extractors.pdf_extractor.PDFExtractor | PyMuPDF не нашёл текст в '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/presentation.pdf' (24 стр.), пробуем OCR-фоллбэк
+2026-04-18 23:29:25,534 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/20241017-euco-conclusions-en.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:29:25,658 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/ADV21-2024-Monthly-Canal-Operations-Summary-June-2024.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:29:25,665 | INFO     | extractors.pdf_extractor.PDFExtractor | PyMuPDF не нашёл текст в '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/license_telematika_2017-2022.pdf' (1 стр.), пробуем OCR-фоллбэк
+2026-04-18 23:29:25,686 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8%20%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20dg-yug.ru.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:29:25,884 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:29:26,012 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1738660894_Приложения к договору субаренды (2).pdf
+2026-04-18 23:29:26,180 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1738660894_Приложения к договору субаренды (2).pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:29:26,225 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1725542351_Медиакит РБК Онлайн.pdf
+2026-04-18 23:29:26,265 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/neutrality-treaty.pdf
+2026-04-18 23:29:26,359 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1725542351_Медиакит РБК Онлайн.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:29:26,459 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1725542337_Медиакит РБК Телеканал.pdf
+2026-04-18 23:29:26,548 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/neutrality-treaty.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:29:26,635 | WARNING  | extractors.pdf_extractor.PDFExtractor | Файл не похож на валидный PDF: /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1725542163_Медиакит РБК 360.pdf
+2026-04-18 23:29:26,979 | INFO     | extractors.pdf_extractor.PDFExtractor | PyMuPDF не нашёл текст в '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/%D0%92.%D0%90.-%D0%9E%D1%80%D0%BB%D0%BE%D0%B2%D1%83-%D0%BE%D1%82-%D0%90.%D0%98.-%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0.pdf' (2 стр.), пробуем OCR-фоллбэк
+2026-04-18 23:29:27,128 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1725542337_Медиакит РБК Телеканал.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:29:27,175 | INFO     | extractors.image_extractor | Успех на попытке 1 (Tesseract)
+2026-04-18 23:29:27,420 | WARNING  | extractors.pdf_extractor.PDFExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/1725542163_Медиакит РБК 360.pdf' — Файл не является валидным PDF (повреждён или не PDF)
+2026-04-18 23:29:30,495 | INFO     | extractors.pdf_extractor.PDFExtractor | OCR-фоллбэк: обработаем 1 страниц через ImageExtractor
+2026-04-18 23:29:30,574 | INFO     | extractors.pdf_extractor.PDFExtractor | OCR-фоллбэк: обработаем 2 страниц через ImageExtractor
+2026-04-18 23:29:33,365 | INFO     | extractors.pdf_extractor.PDFExtractor | OCR-фоллбэк: обработаем 24 страниц через ImageExtractor
+2026-04-18 23:29:35,814 | INFO     | extractors.pdf_extractor.PDFExtractor | OCR-фоллбэк успешен для /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/%D0%92.%D0%90.-%D0%9E%D1%80%D0%BB%D0%BE%D0%B2%D1%83-%D0%BE%D1%82-%D0%90.%D0%98.-%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0.pdf: 2141 символов
+2026-04-18 23:29:39,413 | INFO     | extractors.pdf_extractor.PDFExtractor | OCR-фоллбэк успешен для /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/license_telematika_2017-2022.pdf: 889 символов
+2026-04-18 23:29:41,776 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/68624_original.png': Unknown argument: use_gpu
+2026-04-18 23:29:42,120 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/67883_original.png': Unknown argument: use_gpu
+2026-04-18 23:29:42,579 | INFO     | extractors.image_extractor | Успех на попытке 2 (Tesseract)
+2026-04-18 23:29:42,591 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/530a0c14bfac93e04bbbd09ad1fca64c.jpg': Unknown argument: use_gpu
+2026-04-18 23:29:43,015 | INFO     | extractors.image_extractor | Успех на попытке 3 (Tesseract)
+2026-04-18 23:29:43,878 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/52043990928_2b726f3fe4_z.jpg': Unknown argument: use_gpu
+2026-04-18 23:29:44,055 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/4416_900.jpg': Unknown argument: use_gpu
+2026-04-18 23:29:44,419 | INFO     | extractors.image_extractor | Успех на попытке 3 (Tesseract)
+2026-04-18 23:29:44,873 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png': Unknown argument: use_gpu
+2026-04-18 23:29:45,114 | INFO     | extractors.image_extractor | Успех на попытке 2 (EasyOCR)
+2026-04-18 23:29:45,155 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/298141_original.jpg': Unknown argument: use_gpu
+2026-04-18 23:29:48,273 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/68624_original.png': Unknown argument: use_gpu
+2026-04-18 23:29:48,592 | INFO     | extractors.image_extractor | Успех на попытке 4 (Tesseract)
+2026-04-18 23:29:49,832 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/52043990928_2b726f3fe4_z.jpg': Unknown argument: use_gpu
+2026-04-18 23:29:50,080 | INFO     | extractors.image_extractor | Успех на попытке 3 (Tesseract)
+2026-04-18 23:29:50,349 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png': Unknown argument: use_gpu
+2026-04-18 23:29:50,608 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/298141_original.jpg': Unknown argument: use_gpu
+2026-04-18 23:29:50,853 | INFO     | extractors.image_extractor | Успех на попытке 4 (Tesseract)
+2026-04-18 23:29:55,500 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png': Unknown argument: use_gpu
+2026-04-18 23:29:57,719 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png': Unknown argument: use_gpu
+2026-04-18 23:29:59,951 | WARNING  | extractors.image_extractor | PaddleOCR ошибка для '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png': Unknown argument: use_gpu
+2026-04-18 23:29:59,952 | WARNING  | extractors.image_extractor.ImageExtractor | Извлечение завершено с ошибкой: '/home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/i_026.png' — OCR не смог извлечь текст
+2026-04-18 23:30:09,753 | INFO     | extractors.pdf_extractor.PDFExtractor | OCR-фоллбэк успешен для /home/dodrios/Downloads/ПДнDataset/share/Выгрузки/Сайты/Доки/presentation.pdf: 11841 символов
