@@ -1,25 +1,5 @@
-<<<<<<< HEAD
-pandas == 3.0.2
-pyarrow == 14.0.0
-python-docx == 1.1.0
-PyMuPDF == 1.24.0
-pdfplumber == 0.11.0
-beautifulsoup4 == 4.12.3
-lxml == 5.2.0
-Pillow == 10.4.0
-pytesseract == 0.3.13
-easyocr == 1.7.2
-tqdm == 4.66.0
-python-magic == 0.4.27
-openpyxl == 3.1.0
-=======
-# ============================================================
-# pizza_assorted — requirements.txt
-# Python 3.10+
-# ============================================================
 
 # --- Этап 2: Extractors ---
-
 # PDF
 pymupdf>=1.23.0          # fitz — быстрый основной бэкенд
 pdfplumber>=0.10.0       # резервный бэкенд, лучше для сложной вёрстки
@@ -55,4 +35,3 @@ colorlog>=6.8.0          # цветной вывод логов
 # --- Опционально (для разработки) ---
 pytest>=8.0.0
 pytest-cov>=5.0.0
->>>>>>> origin/dodrios

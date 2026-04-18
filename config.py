@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # config.py
 """
 Глобальные константы проекта
@@ -31,7 +30,6 @@ EXCLUDED_DIRS = {
     ".vscode",
     "node_modules",
 }
-=======
 """Минимальный config.py для запуска тестов."""
 
 SUPPORTED_EXTS_SET: frozenset[str] = frozenset({
@@ -41,4 +39,3 @@ SUPPORTED_EXTS_SET: frozenset[str] = frozenset({
 })
 
 DEFAULT_ROOT_DIR: str = "./test_dataset"
->>>>>>> origin/dodrios
