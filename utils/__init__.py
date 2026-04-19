@@ -1,3 +1,10 @@
+"""
+utils/__init__.py — Публичный API пакета утилит.
+
+Позволяет импортировать функции напрямую:
+    from utils import clean_text, setup_logging, process_files_parallel
+"""
+
 from .text_utils import clean_text, quick_skip_text
 from .file_utils import is_supported_by_extension, get_file_mime, safe_read_text
 from .logging_utils import setup_logging, get_progress_bar

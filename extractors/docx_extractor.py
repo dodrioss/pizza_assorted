@@ -30,6 +30,7 @@ Example::
 from __future__ import annotations
 
 import logging
+from pathlib import Path
 from typing import Iterator
 
 from extractors.base import BaseExtractor, ExtractionResult, ExtractionError
@@ -48,7 +49,6 @@ class DocxExtractor(BaseExtractor):
         ExtractionError: Если файл повреждён или не является валидным
             ``.docx``-документом.
     """
-
 
     def extract(self) -> ExtractionResult:
         """Извлекает текст из ``.docx``-файла.
@@ -85,6 +85,39 @@ class DocxExtractor(BaseExtractor):
 
         try:
             doc = Document(self.file_path)
+        except PackageNotFoundError:
+            path = Path(self.file_path)
+            if path.suffix.lower() == ".doc":
+                try:
+                    from utils.doc_legacy_fix import extract_legacy_doc
+                    logger.info("Обнаружен .doc файл, запускаем legacy-экстрактор: %s", self.file_path)
+                    text = extract_legacy_doc(str(path))
+                    if text and text.strip():
+                        logger.info("Legacy-экстрактор вернул %d символов для %s", len(text), self.file_path)
+                        return self._make_result(
+                            text=text.strip(),
+                            chunks=[text.strip()] if text.strip() else [],
+                            metadata={
+                                "paragraph_count": 0,
+                                "table_count": 0,
+                                "author": None,
+                                "title": None,
+                                "created": None,
+                                "modified": None,
+                                "legacy_doc": True,  
+                            },
+                            start_time=start,
+                        )
+                except ImportError:
+                    logger.warning("utils.doc_legacy_fix не доступен, пропуск .doc-файла")
+                except Exception as legacy_exc:
+                    logger.warning("Legacy-экстрактор упал для %s: %s", self.file_path, legacy_exc)
+            
+            # Если не .doc или legacy не помог — пробрасываем оригинальную ошибку
+            raise ExtractionError(
+                self.file_path,
+                "Файл не является валидным .docx (возможно, это старый .doc или повреждённый файл)",
+            )
         except Exception as exc:
             raise ExtractionError(
                 self.file_path,
@@ -122,6 +155,7 @@ class DocxExtractor(BaseExtractor):
                 if getattr(core_props, "modified", None)
                 else None
             ),
+            "legacy_doc": False, 
         }
 
         result = self._make_result(
@@ -159,7 +193,6 @@ class DocxExtractor(BaseExtractor):
             text = para.text.strip()
             if text:
                 yield text
-
 
     @staticmethod
     def _extract_tables(doc: object) -> list[str]:

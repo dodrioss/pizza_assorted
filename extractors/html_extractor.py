@@ -37,6 +37,7 @@ from typing import Iterator
 
 from extractors.base import BaseExtractor, ExtractionResult, ExtractionError
 
+
 logger = logging.getLogger(__name__)
 
 # Теги, содержимое которых не является читаемым контентом

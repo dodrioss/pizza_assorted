@@ -282,16 +282,18 @@ class CsvParquetExtractor(BaseExtractor):
         """
         try:
             import pyarrow.parquet as pq
+            from utils.parquet_compat import safe_to_pandas  # безопасный fallback для to_pandas()
         except ImportError as exc:
             raise ExtractionError(
                 self.file_path,
-                "Библиотека 'pyarrow' не установлена. "
+                "Библиотека 'pyarrow' не установлена или utils.parquet_compat отсутствует. "
                 "Выполните: pip install pyarrow",
             ) from exc
 
         try:
             table = pq.read_table(self.file_path)
-            df = table.to_pandas(dtype_backend="numpy_nullable")
+            # Заменяем table.to_pandas(dtype_backend="numpy_nullable")
+            df = safe_to_pandas(table)
         except Exception as exc:
             raise ExtractionError(
                 self.file_path, f"Ошибка чтения Parquet: {exc}"
@@ -336,6 +338,8 @@ class CsvParquetExtractor(BaseExtractor):
         try:
             pf = pq.ParquetFile(self.file_path)
             for batch in pf.iter_batches(batch_size=self._csv_chunk_size):
+                # Если safe_to_pandas нужен и для батчей, замените строку ниже на:
+                # df = safe_to_pandas(batch.to_pandas())
                 df = batch.to_pandas()
                 chunk_text = self._dataframe_to_text(df)
                 if chunk_text:
@@ -374,7 +378,6 @@ class CsvParquetExtractor(BaseExtractor):
                 text_columns.append(col)
 
         if not text_columns:
-            # Если не нашли текстовых столбцов — берём все (на всякий случай)
             text_columns = df.columns.tolist()
 
         selected = df[text_columns].fillna("").astype(str)

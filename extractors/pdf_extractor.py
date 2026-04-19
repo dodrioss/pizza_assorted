@@ -32,16 +32,22 @@ from __future__ import annotations
 import logging
 import os
 import tempfile
+import signal
+import sys
 from typing import Iterator
 from pathlib import Path
 
 from extractors.base import BaseExtractor, ExtractionResult, ExtractionError
+from utils.parallel import acquire_ocr_slot
 
 logger = logging.getLogger(__name__)
 
 # Минимальное количество символов на страницу, при котором считается,
 # что PyMuPDF успешно извлёк текст.
 _MIN_CHARS_PER_PAGE = 10
+
+# Таймаут на обработку одного файла в OCR-фоллбэке (сек)
+_OCR_FALLBACK_TIMEOUT = 600  # 10 минут максимум
 
 
 class PDFExtractor(BaseExtractor):
@@ -77,10 +83,14 @@ class PDFExtractor(BaseExtractor):
         except Exception:
             return False
 
+    def _timeout_handler(self, signum, frame):
+        """Обработчик таймаута для OCR-фоллбэка."""
+        raise TimeoutError(f"OCR-фоллбэк превысил лимит {_OCR_FALLBACK_TIMEOUT} сек")
+
     def _extract_ocr_fallback(self, pdf_path: str, start: float) -> ExtractionResult:
         """
         Резервный метод: рендерит страницы PDF в изображения и извлекает текст через ImageExtractor.
-        Вызывается, когда текстовый слой не найден.
+        Использует семафор OCR, адаптивный DPI и таймаут для стабильной работы.
         """
         try:
             from pdf2image import convert_from_path
@@ -101,18 +111,58 @@ class PDFExtractor(BaseExtractor):
         page_count = 0
 
         try:
-            images = convert_from_path(pdf_path, dpi=200, thread_count=2)
-            page_count = len(images)
-            self._logger.info("OCR-фоллбэк: обработаем %d страниц через ImageExtractor", page_count)
 
-            with tempfile.TemporaryDirectory() as tmpdir:
-                for idx, img in enumerate(images):
-                    tmp_path = os.path.join(tmpdir, f"page_{idx}.png")
-                    img.save(tmp_path, "PNG")
-                    img_result = ImageExtractor(tmp_path).extract()
-                    if img_result.text.strip():
-                        chunks.append(img_result.text.strip())
-                        total_chars += len(img_result.text)
+            images = convert_from_path(pdf_path, dpi=150, thread_count=1)
+            page_count = len(images)
+            
+            # Если страниц много — снижаем DPI для ускорения
+            dpi = 100 if page_count > 10 else 150
+            if dpi == 100 and page_count > 10:
+                # Переконвертируем с меньшим DPI только если нужно
+                images = convert_from_path(pdf_path, dpi=dpi, thread_count=1)
+                self._logger.info("OCR-фоллбэк: снижен DPI до %d для %d страниц (файл: %s)", 
+                                  dpi, page_count, os.path.basename(pdf_path))
+            
+            self._logger.info("OCR-фоллбэк: обработаем %d страниц через ImageExtractor (DPI=%d)", 
+                              page_count, dpi)
+
+            timeout_set = False
+            if hasattr(signal, 'SIGALRM'):
+                old_handler = signal.signal(signal.SIGALRM, self._timeout_handler)
+                signal.alarm(_OCR_FALLBACK_TIMEOUT)
+                timeout_set = True
+
+            try:
+                with tempfile.TemporaryDirectory() as tmpdir:
+                    for idx, img in enumerate(images):
+                        tmp_path = os.path.join(tmpdir, f"page_{idx}.png")
+                        img.save(tmp_path, "PNG")
+                        
+                        # === ПРОГРЕСС-ЛОГ: каждые 5 страниц ===
+                        if idx % 5 == 0 and idx > 0:
+                            self._logger.info("OCR-фоллбэк: страница %d/%d для %s", 
+                                              idx, page_count, os.path.basename(pdf_path))
+                        
+                        with acquire_ocr_slot():
+                            img_result = ImageExtractor(tmp_path).extract()
+                        
+                        if img_result.text.strip():
+                            chunks.append(img_result.text.strip())
+                            total_chars += len(img_result.text)
+            finally:
+                # Отключаем таймаут
+                if timeout_set:
+                    signal.alarm(0)
+                    signal.signal(signal.SIGALRM, old_handler)
+                    
+        except TimeoutError as exc:
+            self._logger.error("OCR-фоллбэк таймаут для %s: %s", pdf_path, exc)
+            return self._make_result(
+                text="", chunks=[],
+                metadata={"page_count": page_count, "backend": "ocr_fallback", "has_text_layer": False, "timeout": True},
+                error=f"OCR fallback timeout: {exc}",
+                start_time=start,
+            )
         except Exception as exc:
             self._logger.error("OCR-фоллбэк упал для %s: %s", pdf_path, exc)
             return self._make_result(
@@ -131,6 +181,7 @@ class PDFExtractor(BaseExtractor):
                 "backend": "ocr_fallback",
                 "has_text_layer": False,
                 "ocr_fallback": True,
+                "dpi_used": dpi if 'dpi' in locals() else 150,
             },
             error=None if has_text else "OCR не смог извлечь текст из скана",
             start_time=start,
@@ -174,7 +225,7 @@ class PDFExtractor(BaseExtractor):
             if (result.is_empty 
                 and not result.metadata.get("has_text_layer") 
                 and result.metadata.get("backend") != "ocr_fallback"
-                and not result.metadata.get("invalid_pdf")):  # <--- Добавлена проверка
+                and not result.metadata.get("invalid_pdf")):
                 self._logger.info(
                     "PyMuPDF + OCR не дали результата для '%s', пробуем pdfplumber",
                     self.file_path,
@@ -222,7 +273,6 @@ class PDFExtractor(BaseExtractor):
                 start_time=start,
             )
         
-        # Если валидация прошла — открываем как обычно
         try:
             doc = fitz.open(self.file_path)
         except Exception as exc:
@@ -253,7 +303,6 @@ class PDFExtractor(BaseExtractor):
         has_text = total_chars >= page_count * _MIN_CHARS_PER_PAGE if page_count > 0 else False
         full_text = "\n\n".join(chunks)
 
-        # === НОВОЕ: если текст не найден — не сразу fallback на pdfplumber, а сначала пробуем OCR ===
         if not has_text and page_count > 0:
             self._logger.info(
                 "PyMuPDF не нашёл текст в '%s' (%d стр.), пробуем OCR-фоллбэк",

@@ -6,3 +6,6 @@ python -m pip install paddleocr
 
 Внести в структуру проекта: utils/parallel.py
 
+В файле utils/doc_legacy_fix.py -> установка antiword
+
+Заебался писать, что нового добавилось в utils, просто сравнить 

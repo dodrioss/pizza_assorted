@@ -4,6 +4,7 @@ utils/parallel.py — утилита параллельной обработки
 Авто-определение оптимального числа потоков:
   - I/O-bound задачи (OCR, чтение файлов): min(32, cpu_count * 4)
   - CPU-bound задачи (regex, классификация): cpu_count
+  - OCR-задачи: настраиваемый лимит (по умолчанию 2) через семафор
 
 Стратегия: ThreadPoolExecutor для всего пайплайна (узкое место — диск/OCR).
 ProcessPoolExecutor не нужен: GIL не мешает I/O, а fork-overhead съест выигрыш.
@@ -15,11 +16,83 @@ import threading
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
-from typing import Callable
+from typing import Callable, Optional
+from contextlib import contextmanager
 
 logger = logging.getLogger(__name__)
 
 _progress_lock = threading.Lock()
+
+# Глобальный менеджер слотов для OCR (инициализируется при первом импорте)
+_ocr_manager: Optional["OCRSlotManager"] = None
+
+
+class OCRSlotManager:
+    """
+    Управляет пулом слотов для ресурсоёмких OCR-операций.
+
+    Зачем: Tesseract/EasyOCR/PaddleOCR потребляют много памяти и CPU.
+    Если запустить 20 потоков с OCR одновременно — система уйдёт в своп.
+    Решение: семафор на 2-4 слота независимо от общего числа потоков.
+    """
+
+    def __init__(self, max_concurrent: int | None = None):
+        if max_concurrent is None:
+            # Читаем из env или дефолт 2
+            env_val = os.environ.get("PDN_OCR_WORKERS")
+            max_concurrent = int(env_val) if env_val and env_val.isdigit() else 2
+        
+        self.max_concurrent = max(1, max_concurrent)
+        self._semaphore = threading.Semaphore(self.max_concurrent)
+        self._lock = threading.Lock()
+        self._active = 0
+
+    @contextmanager
+    def acquire(self):
+        """Контекстный менеджер для захвата слота."""
+        with self._semaphore:
+            with self._lock:
+                self._active += 1
+                logger.debug(f"OCR слот: {self._active}/{self.max_concurrent}")
+            try:
+                yield
+            finally:
+                with self._lock:
+                    self._active -= 1
+
+    @property
+    def active_count(self) -> int:
+        with self._lock:
+            return self._active
+
+
+def get_ocr_manager(max_concurrent: int | None = None) -> OCRSlotManager:
+    """
+    Возвращает глобальный экземпляр OCRSlotManager (singleton).
+    При первом вызове можно задать лимит, далее он фиксируется.
+    """
+    global _ocr_manager
+    if _ocr_manager is None:
+        _ocr_manager = OCRSlotManager(max_concurrent)
+    return _ocr_manager
+
+
+@contextmanager
+def acquire_ocr_slot(max_concurrent: int | None = None):
+    """
+    Контекстный менеджер для ограничения параллельных OCR-запросов.
+
+    Пример использования в image_extractor.py:
+        with acquire_ocr_slot():
+            result = pytesseract.image_to_string(img)
+
+    Args:
+        max_concurrent: Лимит одновременных OCR (по умолчанию из env или 2).
+                       Можно переопределить через PDN_OCR_WORKERS.
+    """
+    manager = get_ocr_manager(max_concurrent)
+    with manager.acquire():
+        yield
 
 
 def optimal_workers(mode: str = "io") -> int:
@@ -119,11 +192,13 @@ def get_worker_info() -> dict:
     """
     cpu = os.cpu_count() or 2
     env_workers = os.environ.get("PDN_WORKERS")
+    env_ocr = os.environ.get("PDN_OCR_WORKERS")
     return {
         "cpu_count": cpu,
         "io_workers": min(32, cpu * 4),
         "cpu_workers": cpu,
         "balanced_workers": cpu * 2,
+        "ocr_workers": int(env_ocr) if env_ocr and env_ocr.isdigit() else 2,
         "env_override": int(env_workers) if env_workers and env_workers.isdigit() else None,
         "effective_workers": optimal_workers("io"),
     }
