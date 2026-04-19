@@ -12,7 +12,7 @@
     </a>
     <img src="https://img.shields.io/github/license/dodrioss/pizza_assorted?style=flat-square" alt="License">
     <img src="https://img.shields.io/github/languages/code-size/dodrioss/pizza_assorted?color=4ECDC4&style=flat-square" alt="Code Size">
-    <img src="https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white&style=flat-square" alt="Python">
+    <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white&style=flat-square" alt="Python">
     <img src="https://img.shields.io/badge/152--ФЗ-Compliance-00C853?style=flat-square" alt="152-FZ">
     <img src="https://img.shields.io/badge/OCR-Tesseract%20%7C%20EasyOCR%20%7C%20PaddleOCR-FF9800?style=flat-square" alt="OCR">
   </p>
