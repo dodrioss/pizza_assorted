@@ -57,6 +57,34 @@ from detectors.validators import validate
 
 logger = logging.getLogger(__name__)
 
+# ---------------------------------------------------------------------------
+# Минимальная длина совпадения для каждого паттерна.
+# Совпадения короче — отбрасываются как мусор.
+# ---------------------------------------------------------------------------
+_MIN_MATCH_LENGTH: dict[str, int] = {
+    "full_name": 10,           # минимум «Иванов Иван Иванович»
+    "full_name_context": 10,
+    "initials_name": 7,        # минимум «Иванов И.И.»
+    "address": 10,
+    "date_of_birth": 8,
+    "postal_code": 6,
+    "snils": 11,               # минимум 11 цифр
+    "inn": 10,
+    "phone": 10,               # +7XXXXXXXXXX
+    "card_number": 16,         # минимум 4-4-4-4 с разделителями
+    "mrz": 30,
+}
+
+# ---------------------------------------------------------------------------
+# Группы паттернов для межпаттерновой дедупликации.
+# Если значение уже найдено одним паттерном группы — другие не дублируют.
+# ---------------------------------------------------------------------------
+_DEDUP_GROUPS: dict[str, frozenset[str]] = {
+    "full_name": frozenset({"full_name", "full_name_context"}),
+    "full_name_context": frozenset({"full_name", "full_name_context"}),
+    "passport_rf": frozenset({"passport_rf"}),
+}
+
 
 @dataclass
 class PIIFinding:
@@ -332,6 +360,10 @@ class PIIDetector:
             if not raw_value:
                 continue
 
+            # Фильтр слишком коротких совпадений (мусор от широких паттернов)
+            if len(raw_value) < _MIN_MATCH_LENGTH.get(name, 3):
+                continue
+
             # Математическая валидация (только если требуется)
             validated: bool | None = None
             if name in VALIDATION_REQUIRED:
@@ -341,6 +373,36 @@ class PIIDetector:
 
             # Нормализованный ключ для дедупликации
             norm_value = self._normalize(raw_value)
+
+            # Межпаттерновая дедупликация для паттернов ФИО:
+            # full_name_context включает ключевое слово в совпадение («фио:ивановиван...»),
+            # поэтому сравниваем по извлечённой фамилии (группа «last»), если она есть.
+            dedup_key_value = norm_value
+            if name in ("full_name", "full_name_context", "initials_name"):
+                try:
+                    last = match.group("last")
+                    if last:
+                        dedup_key_value = self._normalize(last)
+                except IndexError:
+                    pass
+
+            # Межпаттерновая дедупликация: если значение уже найдено
+            # смежным паттерном той же категории — не дублируем запись.
+            if self._deduplicate and _DEDUP_GROUPS.get(name):
+                alias_group = _DEDUP_GROUPS[name]
+                found_alias = None
+                for alias in alias_group:
+                    # Ищем совпадение по dedup_key_value среди уже накопленных
+                    for existing_key, existing_finding in accumulator.items():
+                        if existing_key[0] == alias and dedup_key_value in existing_key[1]:
+                            found_alias = existing_key
+                            break
+                    if found_alias:
+                        break
+                if found_alias:
+                    accumulator[found_alias].count += 1
+                    continue
+
             key = (name, norm_value)
 
             if key in accumulator:
