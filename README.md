@@ -103,7 +103,7 @@ python main.py --dir /critical --aggressive-ocr --formats json md
 
 ## 🛠 Технологии
 
-- **Python 3.9+**
+- **Python 3.10+**
 - **OCR-движки:** Tesseract, EasyOCR, PaddleOCR
 - **Библиотеки:** pypdf, python-docx, openpyxl, pytesseract, concurrent.futures
 - Красивый вывод в консоль через **Rich**
