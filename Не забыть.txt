@@ -1,0 +1,11 @@
+# Они не ставятся через pip!
+python -m pip install paddlepaddle -i https://www.paddlepaddle.org.cn/packages/stable/cpu/
+
+# 4. Установи paddleocr (если ещё не установился)
+python -m pip install paddleocr
+
+Внести в структуру проекта: utils/parallel.py
+
+В файле utils/doc_legacy_fix.py -> установка antiword
+
+Заебался писать, что нового добавилось в utils, просто сравнить 
