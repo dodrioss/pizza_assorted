@@ -101,7 +101,8 @@ def parse_args():
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
     parser.add_argument("--dir", default=".", help="Путь к папке для сканирования")
-    parser.add_argument("--formats", nargs="+", choices=["csv", "json", "md"], default=["csv"])
+    # --- ИСПРАВЛЕНИЕ: добавлен "html" в choices ---
+    parser.add_argument("--formats", nargs="+", choices=["csv", "json", "md", "html"], default=["csv"])
     parser.add_argument("--output-dir", default="output/reports")
     parser.add_argument("--log", default="pdn_scanner.log")
 

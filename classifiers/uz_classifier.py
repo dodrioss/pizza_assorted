@@ -1,78 +1,104 @@
 """
-4-й этап: Классификация уровня защищённости (УЗ-1…УЗ-4)
-по требованиям Федерального закона № 152-ФЗ
+4-й этап: Классификация уровня защищённости (УЗ-1…УЗ-4) по 152-ФЗ
 """
 
 from typing import Dict
 
-class UZClassifier:
-    """Классификатор уровня защищённости информационной системы."""
 
-    # Группировка категорий ПДн (ключи должны совпадать с теми, что возвращает pii_detector)
-    SPECIAL_BIOMETRIC_CATS = {
-        "БИОМЕТРИЯ", "ЗДОРОВЬЕ", "РЕЛИГИЯ", "ПОЛИТИКА", "РАСА",
-        "СПЕЦИАЛЬНЫЕ_КАТЕГОРИИ", "БИОМЕТРИЧЕСКИЕ_ДАННЫЕ"
+class UZClassifier:
+    """Классификатор уровня защищённости персональных данных."""
+
+    # Нормализованные категории (приводим всё к UPPER)
+    SPECIAL_CATEGORIES = {
+        "БИОМЕТРИЯ", "BIOMETRIC", "BIOMETRY",
+        "ЗДОРОВЬЕ", "HEALTH", "MEDICAL",
+        "РЕЛИГИЯ", "RELIGION",
+        "ПОЛИТИКА", "POLITICAL",
+        "РАСА", "RACE", "ETHNICITY",
+        "SPECIAL", "SPECIAL_CATEGORY"
     }
 
-    PAYMENT_CATS = {"НОМЕР_КАРТЫ", "БАНКОВСКИЙ_СЧЕТ", "БИК", "ПЛАТЕЖНЫЕ_ДАННЫЕ"}
+    PAYMENT_CATEGORIES = {
+        "НОМЕР_КАРТЫ", "CREDIT_CARD", "CARD_NUMBER",
+        "БАНКОВСКИЙ_СЧЕТ", "BANK_ACCOUNT", "IBAN",
+        "ПЛАТЕЖНЫЕ_ДАННЫЕ", "PAYMENT"
+    }
 
-    STATE_ID_CATS = {
-        "ПАСПОРТ", "СНИЛС", "ИНН", "ВОДИТЕЛЬСКОЕ_УДОСТОВЕРЕНИЕ",
+    STATE_ID_CATEGORIES = {
+        "ПАСПОРТ", "PASSPORT",
+        "СНИЛС", "SNILS",
+        "ИНН", "INN",
+        "ВОДИТЕЛЬСКОЕ_УДОСТОВЕРЕНИЕ", "DRIVERS_LICENSE",
         "MRZ", "ГОСУДАРСТВЕННЫЕ_ИДЕНТИФИКАТОРЫ"
     }
 
-    ORDINARY_CATS = {
-        "ФИО", "ТЕЛЕФОН", "EMAIL", "ДАТА_РОЖДЕНИЯ", "АДРЕС",
-        "МЕСТО_РОЖДЕНИЯ", "КОНТАКТНАЯ_ИНФОРМАЦИЯ"
+    ORDINARY_CATEGORIES = {
+        "ФИО", "FIO", "FULL_NAME", "NAME",
+        "ТЕЛЕФОН", "PHONE",
+        "EMAIL",
+        "ДАТА_РОЖДЕНИЯ", "BIRTHDATE",
+        "АДРЕС", "ADDRESS",
+        "МЕСТО_РОЖДЕНИЯ"
     }
 
-    # Пороги «больших объёмов» (настраиваемо)
-    LARGE_ORDINARY_THRESHOLD = 20      # обычных ПДн
-    LARGE_STATE_THRESHOLD = 5          # государственных идентификаторов
+    # Пороги
+    LARGE_ORDINARY_THRESHOLD = 20   # много обычных ПДн
+    LARGE_STATE_THRESHOLD = 5       # много гос. идентификаторов
+
+
+    def _normalize_key(self, key: str) -> str:
+        """Приводим ключ к верхнему регистру для сравнения."""
+        return str(key).strip().upper()
+
 
     def classify(self, pii_counts: Dict[str, int]) -> str:
         """
-        Возвращает УЗ-1…УЗ-4 на основе обнаруженных категорий и их количества.
-        pii_counts — словарь {категория: количество_находок}
+        Основной метод классификации.
+        pii_counts: { "FIO": 5, "PASSPORT": 2, "PHONE": 10, ... }
         """
         if not pii_counts:
             return "УЗ-4"
 
-        # 1. Специальные категории или биометрия → УЗ-1 (самый высокий риск)
-        if any(cat in self.SPECIAL_BIOMETRIC_CATS for cat in pii_counts if pii_counts[cat] > 0):
+        # Нормализуем все ключи
+        normalized = {self._normalize_key(k): v for k, v in pii_counts.items() if v > 0}
+
+        # 1. Специальные категории → УЗ-1 (самый высокий уровень)
+        if any(cat in self.SPECIAL_CATEGORIES for cat in normalized):
             return "УЗ-1"
 
         # Подсчёт по группам
-        payment_count = sum(pii_counts.get(cat, 0) for cat in self.PAYMENT_CATS)
-        state_count = sum(pii_counts.get(cat, 0) for cat in self.STATE_ID_CATS)
-        ordinary_count = sum(pii_counts.get(cat, 0) for cat in self.ORDINARY_CATS)
+        payment_count = sum(normalized.get(cat, 0) for cat in self.PAYMENT_CATEGORIES)
+        state_count = sum(normalized.get(cat, 0) for cat in self.STATE_ID_CATEGORIES)
+        ordinary_count = sum(normalized.get(cat, 0) for cat in self.ORDINARY_CATEGORIES)
 
-        # 2. Платёжная информация ИЛИ гос. идентификаторы в больших объёмах → УЗ-2
+        # 2. Платёжные данные или много гос. идентификаторов → УЗ-2
         if payment_count > 0 or state_count >= self.LARGE_STATE_THRESHOLD:
             return "УЗ-2"
 
-        # 3. Гос. идентификаторы в малых объёмах ИЛИ обычные ПДн в больших объёмах → УЗ-3
+        # 3. Гос. идентификаторы (хоть немного) или много обычных ПДн → УЗ-3
         if state_count > 0 or ordinary_count >= self.LARGE_ORDINARY_THRESHOLD:
             return "УЗ-3"
 
-        # 4. Только обычные ПДн в малых объёмах → УЗ-4
+        # 4. Только немного обычных ПДн → УЗ-4
         return "УЗ-4"
 
 
-# ====================== ТЕСТОВЫЕ ДАННЫЕ ======================
 if __name__ == "__main__":
     classifier = UZClassifier()
-
+    
     test_cases = [
-        ({"ФИО": 3, "EMAIL": 2}, "УЗ-4"),                    # только обычные, мало
-        ({"ФИО": 25, "ТЕЛЕФОН": 15}, "УЗ-3"),                # обычные в большом объёме
-        ({"ПАСПОРТ": 3}, "УЗ-3"),                            # гос. идентификаторы мало
-        ({"ПАСПОРТ": 7}, "УЗ-2"),                            # гос. идентификаторы много
-        ({"НОМЕР_КАРТЫ": 1}, "УЗ-2"),                       # платёжка
-        ({"ЗДОРОВЬЕ": 1}, "УЗ-1"),                           # специальная категория
-        ({"БИОМЕТРИЯ": 2, "ФИО": 100}, "УЗ-1"),             # биометрия перекрывает всё
+        ({"FIO": 3, "EMAIL": 2}, "УЗ-4"),
+        ({"FIO": 25, "PHONE": 15}, "УЗ-3"),
+        ({"PASSPORT": 3}, "УЗ-3"),
+        ({"SNILS": 7, "FIO": 5}, "УЗ-2"),
+        ({"CREDIT_CARD": 1}, "УЗ-2"),
+        ({"HEALTH": 1}, "УЗ-1"),
+        ({"BIOMETRIC": 2, "FIO": 100}, "УЗ-1"),
+        ({"passport": 4, "phone": 30}, "УЗ-3"),   
     ]
 
+    print("=== ТЕСТЫ UZClassifier ===\n")
     for counts, expected in test_cases:
         result = classifier.classify(counts)
-        print(f"Counts: {counts} => {result}  {'OK' if result == expected else 'Bad'}")
+        status = "OK" if result == expected else "BAD"
+        print(f"{status}  {counts}  →  {result} (ожидали {expected})")
