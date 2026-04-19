@@ -20,5 +20,4 @@ env/
 .DS_Store
 
 # Project-specific (опционально)
-output/
 minimal/
